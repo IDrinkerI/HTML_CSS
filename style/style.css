@@ -1,0 +1,159 @@
+.container {
+  width: 1280px;
+  margin: 0px auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main_header {
+  padding: 25px 50px;
+  background: #445161;
+  color: #ffffff;
+}
+
+.main_header_wrapper {
+  float: left;
+}
+
+.main_header_title {
+  font-size: 60px;
+  line-height: 69px;
+}
+
+.main_header_list {
+  padding-top: 40px;
+}
+
+.main_header_list_item {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 23px;
+  list-style: none;
+}
+
+.main_header_list_item::after {
+  content: "";
+  background-image: url(../image/check_mark.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 2px;
+}
+
+.main_header_image {
+  width: 470px;
+  height: 220px;
+  background-color: #ffffff;
+  float: right;
+  color: #445161;
+}
+
+.main_header::after,
+.content section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content section {
+  padding: 45px 50px;
+}
+
+.content section:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+.content_title {
+  text-align: center;
+  color: #445161;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.content_text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.content_about .content_title {
+  text-align: left;
+}
+
+.content_about_wrapper {
+  width: 55%;
+  float: left;
+}
+
+.content_about_image {
+  width: 430px;
+  height: 245px;
+  float: right;
+  background-color: #445161;
+  color: #ffffff;
+}
+
+.content_dignity_listitem {
+  width: 49%;
+  margin-bottom: 26px;
+}
+
+.content_dignity_listitem:nth-child(odd) {
+  float: left;
+}
+
+.content_dignity_listitem:nth-child(even) {
+  float: right;
+}
+
+.content_dignity_listitem::before {
+  content: "";
+  width: 35px;
+  height: 55px;
+  float: left;
+  margin-right: 10px;
+  background-image: url(../image/plus_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content_screenshots_figure {
+  width: 49%;
+  margin-bottom: 28px;
+}
+
+.content_screenshots_figure_caption {
+  font-size: 24px;
+  color: #445161;
+  margin-bottom: 10px;
+}
+
+.content_screenshots_figure_image {
+  width: 200px;
+  height: 150px;
+  background-color: #445161;
+  color: #ffffff;
+  float: left;
+  margin-right: 10px;
+}
+
+.content_screenshots_figure:nth-child(odd) {
+  float: left;
+}
+
+.content_screenshots_figure:nth-child(even) {
+  float: right;
+}
+
+.content_screenshots_figure:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */
