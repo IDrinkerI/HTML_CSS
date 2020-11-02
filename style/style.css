@@ -101,20 +101,20 @@ body {
   color: #ffffff;
 }
 
-.content_dignity_listitem {
+.content_dignity_item {
   width: 49%;
   margin-bottom: 26px;
 }
 
-.content_dignity_listitem:nth-child(odd) {
+.content_dignity_item:nth-child(odd) {
   float: left;
 }
 
-.content_dignity_listitem:nth-child(even) {
+.content_dignity_item:nth-child(even) {
   float: right;
 }
 
-.content_dignity_listitem::before {
+.content_dignity_item::before {
   content: "";
   width: 35px;
   height: 55px;
@@ -224,6 +224,10 @@ body {
   margin-bottom: 0;
 }
 
+.content_price .container {
+  width: 1020px;
+}
+
 .content_price_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +238,16 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.content_price_offer > *:nth-child(odd) {
+  color: #ffffff;
+  background-color: #445161;
+}
+
+.content_price_offer > *:nth-child(even) {
+  color: #445161;
+  background-color: #ffffff;
 }
 
 .content_price_offer {
@@ -272,16 +286,6 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-}
-
-.content_price_offer > *:nth-child(odd) {
-  color: #ffffff;
-  background-color: #445161;
-}
-
-.content_price_offer > *:nth-child(even) {
-  color: #445161;
-  background-color: #ffffff;
 }
 
 .footer {

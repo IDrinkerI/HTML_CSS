@@ -1,5 +1,6 @@
 $COLOR_PRIMARY: #445161;
 $COLOR_SECONDARY: #ffffff;
+$COLOR_BLACKOUT: #EBEBEB;
 $COLOR_TEXT: #333333;
 
 body{
@@ -115,20 +116,20 @@ body{
 
     &_dignity{
 
-        &_listitem{
+        &_item{
             width: 49%;
             margin-bottom: 26px;
         }
 
-        &_listitem:nth-child(odd){
+        &_item:nth-child(odd){
             float: left;
         }
 
-        &_listitem:nth-child(even){
+        &_item:nth-child(even){
             float: right;
         }
 
-        &_listitem::before{
+        &_item::before{
             content: "";
             width: 35px;
             height: 55px;
@@ -203,7 +204,7 @@ body{
 
             &_wrapper{
                 padding: 16px 10px 10px 16px;
-                background: #EBEBEB;
+                background: $COLOR_BLACKOUT;
                 border-radius: 5px;
                 position: relative;
             }
@@ -211,7 +212,7 @@ body{
             &_wrapper::before{
                 content: "";
                 border: 10px solid transparent;
-                border-right: 10px solid #EBEBEB;
+                border-right: 10px solid $COLOR_BLACKOUT;
                 float: left;
                 position: absolute;
                 left: -20px;
@@ -242,12 +243,25 @@ body{
     }
 
     &_price{
+        .container{
+            width: 1020px;
+        }
         
         &_wrapper{
             display: flex;
             justify-content: space-around;
             text-align: center;
             align-items: flex-end;
+        }
+
+        &_offer > *:nth-child(odd){
+            color: $COLOR_SECONDARY;
+            background-color: $COLOR_PRIMARY;
+        }
+
+        &_offer > *:nth-child(even){
+            color: $COLOR_PRIMARY;
+            background-color: $COLOR_SECONDARY;
         }
 
         &_offer{
@@ -288,15 +302,7 @@ body{
             }
         } 
         
-        &_offer > *:nth-child(odd){
-            color: $COLOR_SECONDARY;
-            background-color: $COLOR_PRIMARY;
-        }
-
-        &_offer > *:nth-child(even){
-            color: $COLOR_PRIMARY;
-            background-color: $COLOR_SECONDARY;
-        }
+        
     }
 }
 
