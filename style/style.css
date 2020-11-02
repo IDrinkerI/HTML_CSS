@@ -1,10 +1,10 @@
-.container {
-  width: 1280px;
-  margin: 0px auto;
-}
-
 body {
   font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
 }
 
 .main_header {
@@ -89,7 +89,7 @@ body {
 }
 
 .content_about_wrapper {
-  width: 55%;
+  width: 52%;
   float: left;
 }
 
@@ -157,6 +157,73 @@ body {
   margin-bottom: 0px;
 }
 
+.content_reviews_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content_reviews_figure {
+  width: 49%;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content_reviews_figure_image {
+  min-width: 66px;
+  max-width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  background-color: #445161;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.content_reviews_figure_wrapper {
+  padding: 16px 10px 10px 16px;
+  background: #EBEBEB;
+  border-radius: 5px;
+  position: relative;
+}
+
+.content_reviews_figure_wrapper::before {
+  content: "";
+  border: 10px solid transparent;
+  border-right: 10px solid #EBEBEB;
+  float: left;
+  position: absolute;
+  left: -20px;
+  top: 40px;
+}
+
+.content_reviews_figure_text {
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.content_reviews_figure_sign {
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: #989898;
+}
+
+.content_reviews_figure:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
 .footer {
   padding-top: 25px;
   display: -webkit-box;
@@ -208,6 +275,10 @@ body {
   color: #445161;
 }
 
+.footer_form_message {
+  resize: none;
+}
+
 .footer_form_submit {
   margin: 0px auto;
   border-radius: 8px;
@@ -217,10 +288,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: #445161;
-}
-
-.footer_form_message {
-  resize: none;
 }
 
 .footer_contacts {
