@@ -105,12 +105,9 @@ body{
             float: left;
         }
 
-        &_image{
+        &_video{
             width: 430px;
-            height: 245px;
             float: right;
-            background-color: $COLOR_PRIMARY; 
-            color: $COLOR_SECONDARY;           
         }
     }
 
@@ -186,7 +183,7 @@ body{
         }
 
         &_figure{
-            width: 49%;
+            width: 48%;
             margin-bottom: 24px;
             display: flex;
 

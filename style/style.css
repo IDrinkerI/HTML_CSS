@@ -93,12 +93,9 @@ body {
   float: left;
 }
 
-.content_about_image {
+.content_about_video {
   width: 430px;
-  height: 245px;
   float: right;
-  background-color: #445161;
-  color: #ffffff;
 }
 
 .content_dignity_item {
@@ -169,7 +166,7 @@ body {
 }
 
 .content_reviews_figure {
-  width: 49%;
+  width: 48%;
   margin-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
