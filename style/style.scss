@@ -1,14 +1,15 @@
 $COLOR_PRIMARY: #445161;
 $COLOR_SECONDARY: #ffffff;
+$COLOR_BLACKOUT: #EBEBEB;
 $COLOR_TEXT: #333333;
-
-.container{
-    width: 1280px;
-    margin: 0px auto;
-}
 
 body{
     font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main_header{
@@ -88,7 +89,7 @@ body{
         font-size: 16px;
         line-height: 24px;
         color: $COLOR_TEXT;
-        margin-bottom: 10px;        
+        margin-bottom: 10px;       
     }
 
     /////////////////
@@ -100,35 +101,32 @@ body{
         }
 
         &_wrapper{
-            width: 55%;
+            width: 52%;
             float: left;
         }
 
-        &_image{
+        &_video{
             width: 430px;
-            height: 245px;
             float: right;
-            background-color: $COLOR_PRIMARY; 
-            color: $COLOR_SECONDARY;           
         }
     }
 
     &_dignity{
 
-        &_listitem{
+        &_item{
             width: 49%;
             margin-bottom: 26px;
         }
 
-        &_listitem:nth-child(odd){
+        &_item:nth-child(odd){
             float: left;
         }
 
-        &_listitem:nth-child(even){
+        &_item:nth-child(even){
             float: right;
         }
 
-        &_listitem::before{
+        &_item::before{
             content: "";
             width: 35px;
             height: 55px;
@@ -172,12 +170,268 @@ body{
 
         &_figure:nth-last-child(-n + 2)
         {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
-    // &_reviews{
+    &_reviews{
 
-    // }
+        &_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
+        &_figure{
+            width: 48%;
+            margin-bottom: 24px;
+            display: flex;
+
+            &_image{     
+                // TODO: Исправить костыль //          
+                min-width: 66px;
+                max-width: 66px;
+                /////////////////////////////
+                height: 66px;
+                border-radius: 33px;
+                background-color: $COLOR_PRIMARY;
+                color: $COLOR_SECONDARY;
+                margin-right: 15px;
+            }
+
+            &_wrapper{
+                padding: 16px 10px 10px 16px;
+                background: $COLOR_BLACKOUT;
+                border-radius: 5px;
+                position: relative;
+            }
+
+            &_wrapper::before{
+                content: "";
+                border: 10px solid transparent;
+                border-right: 10px solid $COLOR_BLACKOUT;
+                float: left;
+                position: absolute;
+                left: -20px;
+                top: 40px;
+            }
+
+            &_text{
+                font-family: Roboto;
+                font-style: italic;
+                font-size: 14px;
+                line-height: 18px;
+                color: $COLOR_TEXT;
+                margin-bottom: 5px;
+            }
+
+            &_sign{                
+                font-family: Roboto;
+                font-style: italic;
+                font-size: 14px;
+                line-height: 18px;
+                color: #989898;
+            }
+        }
+
+        &_figure:nth-last-child(-n + 2){
+            margin-bottom: 0;
+        }
+    }
+
+    &_price{
+        .container{
+            width: 1020px;
+        }
+        
+        &_wrapper{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items: flex-end;
+        }
+
+        &_offer > *:nth-child(odd){
+            color: $COLOR_SECONDARY;
+            background-color: $COLOR_PRIMARY;
+        }
+
+        &_offer > *:nth-child(even){
+            color: $COLOR_PRIMARY;
+            background-color: $COLOR_SECONDARY;
+        }
+
+        &_offer{
+            width: 300px;
+            border-radius: 8px;            
+            background-color: $COLOR_PRIMARY;
+            padding: 15px 3px 20px;
+
+            &_title{     
+                font-size: 24px;
+                line-height: 30px;           
+            }
+
+            &_cost{               
+                padding: 25px 100px;
+                font-size: 40px;
+                line-height: 30px;
+            }
+
+            &_property-list{
+                padding: 15px 20px 15px 40px;
+
+                &_item{
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+
+            &_buy-button{   
+                display: inline-block;  
+                padding: 15px 75px;   
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 18px;
+            }
+        } 
+        
+        
+    }
+}
+
+.footer{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: $COLOR_PRIMARY;  
+    
+    .container{
+        width: 800px;
+    }
+
+    &_title{
+        color: $COLOR_SECONDARY;
+    }
+
+    &_wrapper{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_form{        
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+
+        &_name, &_email, &_message{
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $COLOR_PRIMARY;
+        }
+
+        &_message{
+            resize: none;
+        }
+
+        &_submit{
+            margin: 0 auto;
+            border-radius: 8px;
+            padding: 10px 50px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;            
+            text-transform: uppercase;            
+            color: $COLOR_PRIMARY;
+        }        
+    }
+
+    &_contacts{
+        width: 220px;
+
+        &_contacts-list{
+            &_item{
+                font-size: 16px;
+                line-height: 24px;
+                color: $COLOR_SECONDARY;
+                margin-bottom: 20px;
+
+                
+            }
+
+            &_item::before{
+                content: "";
+                float: left;
+                width: 22px;
+                height: 22px;
+                margin-right: 8px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                
+            }
+
+            #skype_contact::before{                    
+                background-image: url(../image/skype_icon.svg);
+            }
+
+            #icq_contact::before{
+                background-image: url(../image/icq_icon.svg);
+            }
+
+            #email_contact::before{
+                background-image: url(../image/mail_icon.svg);
+            }
+
+            #phone_contact::before{
+                background-image: url(../image/phone_icon.svg);
+            }
+        }
+
+        &_links-list{
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+
+           &_link{
+               width: 45px;
+               height: 45px;
+               background-repeat: no-repeat;
+               background-size: contain;
+           }
+           
+           #twiter_link{
+               background-image: url(../image/twiter_icon.svg);
+           }
+   
+           #vk_link{
+               background-image: url(../image/vk_icon.svg);
+           }
+   
+           #google_plus_link{
+               background-image: url(../image/google_plus_icon.svg);
+           }
+   
+           #facebook_link{
+               background-image: url(../image/facebook_icon.svg);
+           }
+        }
+    }
+
+    &_copyright{
+        padding: 10px;
+        background-color: $COLOR_SECONDARY;
+        color: $COLOR_PRIMARY;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: center;
+    }
 }
