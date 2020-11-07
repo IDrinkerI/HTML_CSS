@@ -1,0 +1,80 @@
+$COLOR_PRIMARY: #998575;
+$COLOR_SECONDARY: #fff;
+$COLOR_HOVER: #C7B299;
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-header{
+    padding: 40px 0 50px;
+    background-image: url(../image/bg_header.png);
+
+    .container{
+        width: 1600px;
+    }
+
+    &_wrapper{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    &_logo{
+        fill: $COLOR_SECONDARY;
+    }
+
+    &_navigator{
+        display: flex;
+        margin-left: auto;
+        padding-top: 15px;
+
+        &_link-list{
+            display: flex;
+            margin-right: 55px;
+
+            &_item a{
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: $COLOR_SECONDARY;
+                text-decoration: none;
+                margin-right: 24px;
+            }
+
+            &_item:last-child a{
+                margin-right: 0px;
+            }
+
+            &_item a:hover{
+                color: $COLOR_HOVER;
+            }
+        }
+
+        &_service-list{
+            display: flex;
+
+            &_item a{
+                margin-right: 30px;
+
+                svg{
+                    fill: $COLOR_SECONDARY;
+                }                
+            }
+
+            &_item:last-child a{
+                margin-right: 0px;
+            }
+
+            &_item a:hover{
+                
+                svg{
+                    fill: $COLOR_HOVER;
+                }
+            }
+        }
+    }
+}
