@@ -1,5 +1,5 @@
 .container {
-  width: 1240px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.main-header_navigator_logo svg {
+.main-header_navigator_logolink svg {
   fill: #fff;
 }
 
@@ -71,7 +71,9 @@
 }
 
 .main-header_slider {
-  padding: 335px 160px 0;
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,11 +121,21 @@
 }
 
 .main-header_slider_button {
-  padding-top: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  padding-top: 35px;
 }
 
 .main-header_slider_button svg {
   fill: #fff;
+}
+
+.main-header_slider_button:active {
+  opacity: 0.5;
 }
 
 .main-header_slider_progressbar {
