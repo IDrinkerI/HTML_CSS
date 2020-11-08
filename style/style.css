@@ -1,16 +1,23 @@
 .container {
   width: 1280px;
   margin: 0 auto;
+  padding: 80px 5px 0;
 }
 
 .main_header {
-  padding: 40px 0 50px;
   background-image: url(../image/bg_header.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.main_header .container {
+  width: 1600px;
+  padding: 40px 0 50px;
+}
+
 .main_header-navigator {
+  width: 80%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +124,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 300px;
+  margin: 0 auto 310px;
 }
 
 .main_header-slider-link:hover {
@@ -148,11 +155,30 @@
   margin: 0 auto;
 }
 
+.content-title {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.content-text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #8C8C8C;
+}
+
 .content-partition_switcher .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 85px 0 90px;
+  padding-bottom: 80px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -171,6 +197,10 @@
   margin: 0 auto;
   width: 270px;
   padding-top: 30px;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .content-partition_switcher-card-description {
@@ -178,12 +208,18 @@
   width: 270px;
   padding-top: 20px;
   margin-bottom: 30px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
 
 .content-partition_switcher-card hr {
   width: 70px;
   border-top-width: 3px;
   border-style: solid;
+  opacity: 0.3;
 }
 
 .content-partition_switcher-card:hover {
@@ -192,5 +228,22 @@
 
 .content-partition_switcher-card:hover svg {
   fill: #C7B299;
+}
+
+.content-partition_switcher-card:hover hr {
+  opacity: 1;
+}
+
+.content-realization {
+  background-color: #FBFAF8;
+}
+
+.content-realization .content-text {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.content-realization-image {
+  padding-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

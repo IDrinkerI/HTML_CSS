@@ -2,21 +2,31 @@ $COLOR_PRIMARY: #998575;
 $COLOR_SECONDARY: #fff;
 $COLOR_HOVER: #C7B299;
 $COLOR_CONTENT: #555555;
+$COLOR_TEXT: #8C8C8C;
+$COLOR_SECTION_BACKGROUND: #FBFAF8;
 
 
 .container{
     width: 1280px;
     margin: 0 auto;
+    padding: 80px 5px 0;
 }
 
 
 .main_header{
-    padding: 40px 0 50px;
+    
     background-image: url(../image/bg_header.png);
     background-repeat: no-repeat;
     background-size: cover;    
 
+    .container{
+        width: 1600px;
+        padding: 40px 0 50px;
+    }
+
     &-navigator{
+        width: 80%;
+        margin:0 auto;
         display: flex;
 
         &-logolink{
@@ -117,7 +127,7 @@ $COLOR_CONTENT: #555555;
             border-radius: 3px;
             padding: 20px 40px;
             width: fit-content;
-            margin: 0 auto 300px;
+            margin: 0 auto 310px;
         }
 
         &-link:hover{
@@ -149,11 +159,30 @@ $COLOR_CONTENT: #555555;
 
 .content{
 
+    &-title{
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: $COLOR_CONTENT;
+        margin-bottom: 20px;
+    }
+
+    &-text{
+        font-family: Montserrat;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $COLOR_TEXT;
+    }
+
     &-partition_switcher{
         
         .container{
             display: flex;
-            padding: 85px 0 90px;
+            padding-bottom: 80px;
             justify-content: space-around;
         }
 
@@ -170,6 +199,10 @@ $COLOR_CONTENT: #555555;
                 margin: 0 auto;                
                 width: 270px;
                 padding-top: 30px;
+                font-family: Raleway;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
             }
 
             &-description{
@@ -177,21 +210,44 @@ $COLOR_CONTENT: #555555;
                 width: 270px;
                 padding-top: 20px;
                 margin-bottom: 30px;
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
             }
 
             hr{                
                 width: 70px;
                 border-top-width: 3px;
                 border-style: solid;
+                opacity: 0.3;
             }
         }
 
         &-card:hover{
-            color: $COLOR_HOVER;
+            color: $COLOR_HOVER;            
 
             svg{
-                fill: $COLOR_HOVER;
+                fill: $COLOR_HOVER;                
             }
+
+            hr{
+                opacity: 1;
+            }
+        }
+    }
+
+    &-realization{
+        background-color: $COLOR_SECTION_BACKGROUND;
+
+        .content-text{
+            width: 770px;
+            margin: 0 auto;
+        }
+
+        &-image{
+            padding-top: 40px;
         }
     }
 }
