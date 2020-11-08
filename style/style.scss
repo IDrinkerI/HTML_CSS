@@ -1,6 +1,7 @@
 $COLOR_PRIMARY: #998575;
 $COLOR_SECONDARY: #fff;
 $COLOR_HOVER: #C7B299;
+$COLOR_CONTENT: #555555;
 
 
 .container{
@@ -119,6 +120,10 @@ $COLOR_HOVER: #C7B299;
             margin: 0 auto 300px;
         }
 
+        &-link:hover{
+            background-color: $COLOR_HOVER;
+        }
+
         &-button{
             height: fit-content;
             background-color: transparent;
@@ -138,6 +143,55 @@ $COLOR_HOVER: #C7B299;
         &-progressbar{
             align-self: flex-end;
             margin: 0 auto;
+        }
+    }
+}
+
+.content{
+
+    &-partition_switcher{
+        
+        .container{
+            display: flex;
+            padding: 85px 0 90px;
+            justify-content: space-around;
+        }
+
+        &-card{
+            color: $COLOR_CONTENT;
+            text-align: center;
+            width: 300px;
+
+            svg{
+                fill: $COLOR_CONTENT;
+            }
+
+            &-title{
+                margin: 0 auto;                
+                width: 270px;
+                padding-top: 30px;
+            }
+
+            &-description{
+                margin: 0 auto;
+                width: 270px;
+                padding-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            hr{                
+                width: 70px;
+                border-top-width: 3px;
+                border-style: solid;
+            }
+        }
+
+        &-card:hover{
+            color: $COLOR_HOVER;
+
+            svg{
+                fill: $COLOR_HOVER;
+            }
         }
     }
 }
