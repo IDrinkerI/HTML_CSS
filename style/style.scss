@@ -9,16 +9,16 @@ $COLOR_HOVER: #C7B299;
 }
 
 
-.main-header{
+.main_header{
     padding: 40px 0 50px;
     background-image: url(../image/bg_header.png);
     background-repeat: no-repeat;
     background-size: cover;    
 
-    &_navigator{
+    &-navigator{
         display: flex;
 
-        &_logolink{
+        &-logolink{
            
 
             svg{
@@ -26,13 +26,13 @@ $COLOR_HOVER: #C7B299;
             }
         }
 
-        &_link-list{
+        &-link_list{
             display: flex;
             padding-top: 15px;
             margin-left: auto;
             margin-right: 55px;
 
-            &_item a{
+            &-item a{
                 font-family: Montserrat;
                 font-weight: 300;
                 font-size: 14px;
@@ -42,20 +42,20 @@ $COLOR_HOVER: #C7B299;
                 margin-right: 24px;
             }
 
-            &_item:last-child a{
+            &-item:last-child a{
                 margin-right: 0px;
             }
 
-            &_item a:hover{
+            &-item a:hover{
                 color: $COLOR_HOVER;
             }
         }
 
-        &_service-list{
+        &-service_list{
             display: flex;
             padding-top: 10px;
 
-            &_item a{
+            &-item a{
                 margin-right: 30px;
 
                 svg{
@@ -63,11 +63,11 @@ $COLOR_HOVER: #C7B299;
                 }                
             }
 
-            &_item:last-child a{
+            &-item:last-child a{
                 margin-right: 0px;
             }
 
-            &_item a:hover{                
+            &-item a:hover{                
 
                 svg{
                     fill: $COLOR_HOVER;
@@ -76,7 +76,7 @@ $COLOR_HOVER: #C7B299;
         }
     }
 
-    &_slider{
+    &-slider{
         width: 1600px;
         margin: 0 auto;
         padding-top: 310px;
@@ -85,21 +85,21 @@ $COLOR_HOVER: #C7B299;
         color: $COLOR_SECONDARY;
         text-align: center;
 
-        &_pretitle{
+        &-pretitle{
             font-family: Raleway;
             font-weight: 500;
             font-size: 36px;
             line-height: 42px;
         }
 
-        &_title{
+        &-title{
             font-family: Raleway;
             font-weight: 600;
             font-size: 52px;
             line-height: 61px;
         }
 
-        &_text{
+        &-text{
             font-family: Montserrat;
             font-size: 16px;
             line-height: 20px;
@@ -107,7 +107,7 @@ $COLOR_HOVER: #C7B299;
             margin-bottom: 40px;
         }
 
-        &_link{
+        &-link{
             display: block;
             color: $COLOR_SECONDARY;
             text-decoration: none;
@@ -119,7 +119,7 @@ $COLOR_HOVER: #C7B299;
             margin: 0 auto 300px;
         }
 
-        &_button{
+        &-button{
             height: fit-content;
             background-color: transparent;
             outline: none;
@@ -131,11 +131,11 @@ $COLOR_HOVER: #C7B299;
             }
         }
 
-        &_button:active{            
+        &-button:active{            
             opacity: 0.5;
         }
 
-        &_progressbar{
+        &-progressbar{
             align-self: flex-end;
             margin: 0 auto;
         }
