@@ -1,41 +1,31 @@
 .container {
-  width: 1280px;
+  width: 1240px;
   margin: 0 auto;
 }
 
 .main-header {
   padding: 40px 0 50px;
   background-image: url(../image/bg_header.png);
-}
-
-.main-header .container {
-  width: 1600px;
-}
-
-.main-header_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.main-header_logo {
-  fill: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-header_navigator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  padding-top: 15px;
+}
+
+.main-header_navigator_logo svg {
+  fill: #fff;
 }
 
 .main-header_navigator_link-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 15px;
+  margin-left: auto;
   margin-right: 55px;
 }
 
@@ -61,6 +51,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10px;
 }
 
 .main-header_navigator_service-list_item a {
@@ -77,5 +68,67 @@
 
 .main-header_navigator_service-list_item a:hover svg {
   fill: #C7B299;
+}
+
+.main-header_slider {
+  padding: 335px 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  text-align: center;
+}
+
+.main-header_slider_pretitle {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main-header_slider_title {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.main-header_slider_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+.main-header_slider_link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #998575;
+  border-radius: 3px;
+  padding: 20px 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 300px;
+}
+
+.main-header_slider_button {
+  padding-top: 40px;
+}
+
+.main-header_slider_button svg {
+  fill: #fff;
+}
+
+.main-header_slider_progressbar {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
