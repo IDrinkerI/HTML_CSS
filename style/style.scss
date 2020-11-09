@@ -362,36 +362,12 @@ body{
                 font-size: 16px;
                 line-height: 24px;
                 color: $COLOR_SECONDARY;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
 
-                
-            }
-
-            &_item::before{
-                content: "";
-                float: left;
-                width: 22px;
-                height: 22px;
-                margin-right: 8px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                
-            }
-
-            #skype_contact::before{                    
-                background-image: url(../image/skype_icon.svg);
-            }
-
-            #icq_contact::before{
-                background-image: url(../image/icq_icon.svg);
-            }
-
-            #email_contact::before{
-                background-image: url(../image/mail_icon.svg);
-            }
-
-            #phone_contact::before{
-                background-image: url(../image/phone_icon.svg);
+                &_icon{
+                    fill: $COLOR_SECONDARY;
+                    margin-right: 5px;
+                }                
             }
         }
 
@@ -401,26 +377,10 @@ body{
             justify-content: space-between;
 
            &_link{
-               width: 45px;
-               height: 45px;
-               background-repeat: no-repeat;
-               background-size: contain;
-           }
-           
-           #twiter_link{
-               background-image: url(../image/twiter_icon.svg);
-           }
-   
-           #vk_link{
-               background-image: url(../image/vk_icon.svg);
-           }
-   
-           #google_plus_link{
-               background-image: url(../image/google_plus_icon.svg);
-           }
-   
-           #facebook_link{
-               background-image: url(../image/facebook_icon.svg);
+               
+               svg{
+                fill: $COLOR_SECONDARY;
+               }
            }
         }
     }
