@@ -34,6 +34,10 @@
   fill: #fff;
 }
 
+.main_header-navigator-logolink:hover svg {
+  fill: #C7B299;
+}
+
 .main_header-navigator-link_list {
   display: -webkit-box;
   display: -ms-flexbox;
