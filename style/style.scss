@@ -39,7 +39,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         }
 
         &-logolink:hover{
-            
+
             svg{
                 fill: $COLOR_HOVER;
             }
@@ -189,9 +189,9 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     &-button_link{
         display: block;
         color: $COLOR_SECONDARY;
+        background-color: $COLOR_PRIMARY;
         text-decoration: none;
         text-transform: uppercase;
-        background-color: $COLOR_PRIMARY;
         border-radius: 3px;
         padding: 20px 40px;
         // width: fit-content;
@@ -200,6 +200,47 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
 
     &-button_link:hover{
         background-color: $COLOR_HOVER;
+    }
+
+    &-card{
+        width: 370px;
+        padding-top: 70px;
+
+        &-caption{
+            background-color: $COLOR_SECTION_BACKGROUND;
+            padding: 24px;
+        }
+
+        &-title{
+            display: block;
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;     
+            color: $COLOR_HOVER;
+            margin-bottom: 8px;
+        }
+
+        &-description{
+            display: block;
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #D1D1D1;
+        }
+    }
+
+    &-card:hover &-card-title{
+        color: $COLOR_SECONDARY;
+    }
+
+    &-card:hover &-description{
+        color: $COLOR_HOVER;
+    }
+
+    &-card:hover &-card-caption{
+        background-color: #352F2D;
     }
 
     ////////////////
@@ -309,6 +350,44 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             line-height: 22px;
             color:$COLOR_SECONDARY;
             opacity: 0.7;            
+        }
+    }
+
+    &-latest_projects{
+
+        .content-text{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        &-links_wrapper{
+            margin: 0 auto;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 34px;
+        }
+
+        &-link{
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #EBEBEB;
+            border-radius: 3px;
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 14px;
+            color: #8C8C8C;
+        }
+
+        &-link:hover{
+            background-color: $COLOR_HOVER;
+            color: $COLOR_SECONDARY;
+        }
+
+        &-cards_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 }
