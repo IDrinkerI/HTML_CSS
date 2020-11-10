@@ -194,7 +194,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         text-transform: uppercase;
         border-radius: 3px;
         padding: 20px 40px;
-        // width: fit-content;
+        //width: fit-content;
         // height: fit-content;      
     }
 
@@ -354,6 +354,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     }
 
     &-latest_projects{
+        padding-bottom: 32px;
 
         .content-text{
             width: 800px;
@@ -388,6 +389,11 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-bottom: 48px;
+        }
+
+        .content-button_link{
+            margin: 0 auto;
         }
     }
 }

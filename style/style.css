@@ -356,6 +356,10 @@
   opacity: 0.7;
 }
 
+.content-latest_projects {
+  padding-bottom: 32px;
+}
+
 .content-latest_projects .content-text {
   width: 800px;
   margin: 0 auto;
@@ -397,5 +401,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.content-latest_projects .content-button_link {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
