@@ -208,6 +208,11 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         width: 370px;
         padding-top: 70px;
 
+        &-figure{
+            display: flex;
+            flex-direction: column;
+        }
+
         &-caption{
             background-color: $COLOR_SECTION_BACKGROUND;
             padding: 24px;
@@ -493,6 +498,54 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
                 margin-right: 8px;
                 transform: translatey(-2px);
             }
+        }
+    }
+
+    &-counters{
+        background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+
+        .container{
+            flex-direction: row;
+            justify-content: center;
+            padding: 36px 0;
+        }
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            width: 115px;
+            align-items: center;
+            margin-right: 72px;
+
+            svg{
+                fill: $COLOR_HOVER;
+                margin-bottom: 4px;
+            }
+
+            &-value{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 59px;
+                color: $COLOR_SECONDARY;  
+            }
+
+            &-name{
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: $COLOR_HOVER;
+                margin-bottom: 12px;
+            }
+
+            hr{
+                width: 30px;
+            }
+        }
+
+        &-card:last-child{
+            margin-right: 0;
         }
     }
 }

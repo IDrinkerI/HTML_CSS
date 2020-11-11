@@ -207,6 +207,16 @@
   padding-top: 70px;
 }
 
+.content-card-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .content-card-caption {
   background-color: #FBFAF8;
   padding: 24px;
@@ -513,5 +523,65 @@
   margin-right: 8px;
   -webkit-transform: translatey(-2px);
           transform: translatey(-2px);
+}
+
+.content-counters {
+  background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+}
+
+.content-counters .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 36px 0;
+}
+
+.content-counters-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 115px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 72px;
+}
+
+.content-counters-card svg {
+  fill: #C7B299;
+  margin-bottom: 4px;
+}
+
+.content-counters-card-value {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fff;
+}
+
+.content-counters-card-name {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C7B299;
+  margin-bottom: 12px;
+}
+
+.content-counters-card hr {
+  width: 30px;
+}
+
+.content-counters-card:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */
