@@ -48,7 +48,7 @@
 }
 
 .main_header-navigator-link_list-item a {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -103,21 +103,21 @@
 }
 
 .main_header-slider-pretitle {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
 }
 
 .main_header-slider-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 61px;
 }
 
 .main_header-slider-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 20px;
   max-width: 560px;
@@ -167,7 +167,7 @@
 }
 
 .content-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 35px;
@@ -177,7 +177,7 @@
 }
 
 .content-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -193,6 +193,9 @@
   text-transform: uppercase;
   border-radius: 3px;
   padding: 20px 40px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .content-button_link:hover {
@@ -211,7 +214,7 @@
 
 .content-card-title {
   display: block;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -221,7 +224,7 @@
 
 .content-card-description {
   display: block;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -264,7 +267,7 @@
   margin: 0 auto;
   width: 270px;
   padding-top: 30px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
@@ -275,7 +278,7 @@
   width: 270px;
   padding-top: 20px;
   margin-bottom: 30px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -337,7 +340,7 @@
 }
 
 .content-purchase_now-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 28px;
   line-height: 33px;
   color: #fff;
@@ -348,7 +351,7 @@
 }
 
 .content-purchase_now-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -381,7 +384,7 @@
   text-decoration: none;
   border: 1px solid #EBEBEB;
   border-radius: 3px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: #8C8C8C;
@@ -454,6 +457,10 @@
           transform: translate(-50%, -50%);
 }
 
+.content-video_presentation-play_button:active svg {
+  fill: #C7B299;
+}
+
 .content-video_presentation .content-title {
   color: #fff;
 }
@@ -462,5 +469,49 @@
   color: #fff;
   width: 570px;
   margin-bottom: 18px;
+}
+
+.content-mobile_devices .container {
+  background-image: url(../image/phone.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.content-mobile_devices-wrapper {
+  width: 670px;
+  margin-left: auto;
+  padding: 110px 0 200px;
+}
+
+.content-mobile_devices .content-title {
+  text-align: left;
+}
+
+.content-mobile_devices .content-text {
+  text-align: left;
+}
+
+.content-mobile_devices-properties_list {
+  padding-top: 50px;
+}
+
+.content-mobile_devices-properties_list-item {
+  margin-bottom: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8C8C8C;
+}
+
+.content-mobile_devices-properties_list-item::before {
+  content: " ";
+  width: 22px;
+  height: 22px;
+  background-image: url(../image/01_op.svg);
+  float: left;
+  margin-right: 8px;
+  -webkit-transform: translatey(-2px);
+          transform: translatey(-2px);
 }
 /*# sourceMappingURL=style.css.map */
