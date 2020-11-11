@@ -653,6 +653,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             outline-style: none;
             border: none;
             background-color: transparent;
+            margin: 0 8px;
 
             svg{
                 fill: #D1D1D1;
@@ -665,6 +666,29 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
 
         &-button:hover svg{
             fill: $COLOR_HOVER;
+        }
+    }
+
+    &-partners{
+        background-image: url(../image/bg_partners.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 0 140px;
+        }
+
+        &-image{
+            width: fit-content;
+            height: fit-content;
+            margin-right: 75px;
+        }
+
+        &-image:last-child{
+            margin-right: 0;
         }
     }
 }
