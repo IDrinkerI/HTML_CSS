@@ -120,6 +120,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             font-weight: 600;
             font-size: 52px;
             line-height: 61px;
+            margin-bottom: 6px;
         }
 
         &-text{
@@ -308,10 +309,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         .content-text{
             width: 770px;
             margin: 0 auto;
-        }
-
-        &-image{
-            padding-top: 40px;
+            margin-bottom: 42px;
         }
     }
 
@@ -351,14 +349,13 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         .content-text{
             width: 800px;
             margin: 0 auto;
+            margin-bottom: 34px;
         }
 
         &-links_wrapper{
             margin: 0 auto;
-            width: 50%;
             display: flex;
-            justify-content: space-around;
-            padding-top: 34px;
+            justify-content: center;
         }
 
         &-link{
@@ -370,11 +367,16 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             font-weight: 300;
             font-size: 14px;
             color: #8C8C8C;
+            margin-right: 10px;
         }
 
         &-link:hover{
             background-color: $COLOR_HOVER;
             color: $COLOR_SECONDARY;
+        }
+
+        &-link:last-child{
+            margin-right: 0;
         }
 
         &-cards_wrapper{
