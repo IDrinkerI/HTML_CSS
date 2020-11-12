@@ -1,0 +1,28 @@
+@-webkit-keyframes pushing_link {
+  to {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+@keyframes pushing_link {
+  to {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+@-webkit-keyframes pushing_button {
+  to {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+
+@keyframes pushing_button {
+  to {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+/*# sourceMappingURL=animation.css.map */

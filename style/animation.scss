@@ -1,0 +1,11 @@
+@keyframes pushing_link{    
+    to{
+        transform: translateY(3px);
+    }
+}
+
+@keyframes pushing_button{
+    to{
+        transform: scale(0.85);
+    }
+}

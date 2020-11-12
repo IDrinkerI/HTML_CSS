@@ -4,6 +4,8 @@ $COLOR_HOVER: #C7B299;
 $COLOR_CONTENT: #555555;
 $COLOR_TEXT: #8C8C8C;
 $COLOR_SECTION_BACKGROUND: #FBFAF8;
+$ANIMATE_PUSH_LINKBUTTON: pushing_link 0.1s linear;
+$ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
 
 .container{
@@ -150,6 +152,10 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             background-color: $COLOR_HOVER;
         }
 
+        &-link:active{
+            animation: $ANIMATE_PUSH_LINKBUTTON;
+        }
+
         &-button{
             height: fit-content;
             background-color: transparent;
@@ -163,7 +169,8 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         }
 
         &-button:active{            
-            opacity: 0.5;
+            opacity: 0.5;            
+            animation: $ANIMATE_PUSH_BUTTON;
         }
 
         &-switcher{
@@ -233,6 +240,10 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
 
     &-button_link:hover{
         background-color: $COLOR_HOVER;
+    }
+
+    &-button_link:active{
+        animation: $ANIMATE_PUSH_LINKBUTTON;
     }
 
     ////////////////
@@ -480,8 +491,15 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             }
         }
 
-        &-play_button:active svg{
-            fill: $COLOR_HOVER;
+        &-play_button:hover{
+
+            svg{
+                fill: $COLOR_HOVER;
+            }
+        }
+
+        &-play_button:active {
+            animation: $ANIMATE_PUSH_BUTTON;            
         }
 
         .content-title{
@@ -739,6 +757,10 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
 
         &-button:hover svg{
             fill: $COLOR_HOVER;
+        }
+
+        &-button:active{
+            animation: $ANIMATE_PUSH_BUTTON;
         }
     }
 
