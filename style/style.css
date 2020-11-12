@@ -100,6 +100,7 @@
           justify-content: space-between;
   color: #fff;
   text-align: center;
+  position: relative;
 }
 
 .main_header-slider-pretitle {
@@ -164,9 +165,11 @@
 }
 
 .main_header-slider-progressbar {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .content-title {

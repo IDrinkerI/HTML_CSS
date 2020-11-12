@@ -102,6 +102,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         justify-content: space-between;
         color: $COLOR_SECONDARY;
         text-align: center;
+        position: relative;
 
         &-pretitle{
             font-family: Raleway, sans-serif;
@@ -161,8 +162,10 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         }
 
         &-progressbar{
-            align-self: flex-end;
-            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
         }
     }
 }
