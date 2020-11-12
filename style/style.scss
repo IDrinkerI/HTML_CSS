@@ -420,20 +420,23 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             }
         }
 
-        &-card:hover &-card-title{
-            color: $COLOR_SECONDARY;
-        }
+        &-card:hover{
 
-        &-card:hover &-description{
-            color: $COLOR_HOVER;
-        }
+            .content-latest_projects-card-title{
+                color: $COLOR_SECONDARY;
+            }
 
-        &-card:hover &-card-caption{
-            background-color: #352F2D;
-        }
+            .content-latest_projects-card-description{
+                color: $COLOR_HOVER;
+            }
 
-        &-card:hover &-card-image{
-            filter: brightness(50%);
+            .content-latest_projects-card-caption{
+                background-color: #352F2D;
+            }
+
+            .content-latest_projects-card-image{
+                filter: brightness(50%);
+            }
         }
 
         .content-button_link{
