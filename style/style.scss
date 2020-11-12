@@ -609,6 +609,39 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             width: 370px;
             border: 1px solid #B3B3B3;
             margin-bottom: 54px;
+            position: relative;
+
+            &-calendar{
+                position: absolute;
+                left: 22px;
+                top: 18px;
+                text-align: center;
+                width: 50px;
+                $CALENDAR_BORDER_RADIUS: 4px;
+                z-index: 1;
+
+                &-date{
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: $COLOR_SECONDARY;
+                    background-color: rgba(0, 0, 0, 0.5);                    
+                    border-top-left-radius: $CALENDAR_BORDER_RADIUS;
+                    border-top-right-radius: $CALENDAR_BORDER_RADIUS;
+                }
+
+                &-month{
+                    font-family: Roboto, sans-serif;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: $COLOR_SECONDARY;                    
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 5px 0;
+                    border-bottom-left-radius: $CALENDAR_BORDER_RADIUS;
+                    border-bottom-right-radius: $CALENDAR_BORDER_RADIUS;
+                }
+            }
             
             &-image{
                 width: 100%;
@@ -655,24 +688,31 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             }
         }
 
-        &-card:hover &-card-image{
-            filter: brightness(50%);            
-        }
+        &-card:hover {
 
-        &-card:hover figure{
-            background-color: #352F2D;
-        }
+            .content-recent_posts-card-calendar-date{
+                background-color: $COLOR_HOVER;
+            }
 
-        &-card:hover &-card-title{
-            color: $COLOR_HOVER;
-        }
+            .content-recent_posts-card-calendar-month{
+                background-color: #A48D71;
+            }
 
-        &-card:hover &-card-description{
-            color: $COLOR_SECONDARY;
-        }
+            .content-recent_posts-card-image{
+                filter: brightness(50%);
+            }        
 
-        &-buttons_wrapper{
+            figure{
+                background-color: #352F2D;
+            }        
 
+            .content-recent_posts-card-title{
+                color: $COLOR_HOVER;
+            }
+        
+            .content-recent_posts-card-description{
+                color: $COLOR_SECONDARY;
+            }
         }
 
         &-button{
