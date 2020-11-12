@@ -29,6 +29,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         width: 80%;
         margin:0 auto;
         display: flex;
+        margin-bottom: 310px;
 
         &-logolink{           
 
@@ -97,12 +98,15 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     &-slider{
         width: 1600px;
         margin: 0 auto;
-        padding-top: 310px;
         display: flex;
         justify-content: space-between;
         color: $COLOR_SECONDARY;
         text-align: center;
         position: relative;
+
+        &-wrapper{
+            margin-bottom: 310px;
+        }
 
         &-pretitle{
             font-family: Raleway, sans-serif;
@@ -123,7 +127,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             font-size: 16px;
             line-height: 20px;
             max-width: 560px;
-            margin-bottom: 40px;
+            margin: 0 auto 40px;
         }
 
         &-link{
@@ -135,7 +139,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             border-radius: 3px;
             padding: 20px 40px;
             width: fit-content;
-            margin: 0 auto 310px;            
+            margin: 0 auto;            
             font-family: Roboto, sans-serif;
             font-size: 14px;
             line-height: 16px;
@@ -229,22 +233,22 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             svg{
                 fill: $COLOR_CONTENT;
                 height: 47px;
+                margin-bottom: 30px;
             }
 
             &-title{
                 margin: 0 auto;                
                 width: 270px;
-                padding-top: 30px;
                 font-family: Raleway, sans-serif;
                 font-weight: 600;
                 font-size: 22px;
                 line-height: 26px;
+                margin-bottom: 20px;
             }
 
             &-description{
                 margin: 0 auto;
                 width: 270px;
-                padding-top: 20px;
                 margin-bottom: 30px;
                 font-family: Montserrat, sans-serif;
                 font-weight: 300;
