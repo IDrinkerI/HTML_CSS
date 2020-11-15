@@ -625,7 +625,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             width: 100%;
             display: flex;
             justify-content: space-around;
-
         }
 
         &-card{
@@ -633,6 +632,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             border: 1px solid #B3B3B3;
             margin-bottom: 54px;
             position: relative;
+            display: flex;
+            flex-direction: column;
 
             &-calendar{
                 position: absolute;
@@ -711,7 +712,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
         }
 
-        &-card:hover {
+        &-card:hover {            
+            background-color: #352F2D;
 
             .content-recent_posts-card-calendar-date{
                 background-color: $COLOR_HOVER;
@@ -723,11 +725,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
             .content-recent_posts-card-image{
                 filter: brightness(50%);
-            }        
-
-            figure{
-                background-color: #352F2D;
-            }        
+            }       
 
             .content-recent_posts-card-title{
                 color: $COLOR_HOVER;
