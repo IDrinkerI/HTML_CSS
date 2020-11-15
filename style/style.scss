@@ -386,6 +386,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             color: $COLOR_SECONDARY;
         }
 
+        &-link:active{
+            animation: $ANIMATE_PUSH_LINKBUTTON;
+        }
+
         &-link:last-child{
             margin-right: 0;
         }
@@ -400,11 +404,9 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-card{
             width: 370px;
             margin-top: 70px;
-
-            figure{
-                display: flex;
-                flex-direction: column;
-            }
+            display: flex;
+            flex-direction: column;
+            
 
             &-caption{
                 background-color: $COLOR_SECTION_BACKGROUND;
