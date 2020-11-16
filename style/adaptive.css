@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 768px;
+  }
+  .main_header-navigator {
+    margin-bottom: 150px;
+  }
+  .main_header-navigator-logolink svg {
+    -webkit-transform: translateX(-20px) scale(0.7);
+            transform: translateX(-20px) scale(0.7);
+  }
+  .main_header-navigator-link_list {
+    margin-right: 0;
+  }
+  .main_header-navigator-link_list-item {
+    margin-right: 12px;
+  }
+  .main_header-navigator-service_list {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 320px;
+  }
+  .main_header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main_header-navigator {
+    margin: 0;
+  }
+  .main_header-navigator-logolink svg {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .main_header-navigator-link_list {
+    visibility: hidden;
+  }
+  .main_header-navigator-service_list {
+    visibility: hidden;
+  }
+  .main_header-slider {
+    display: none;
+  }
+}
+/*# sourceMappingURL=adaptive.css.map */
