@@ -9,9 +9,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
 
 .container{
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 80px 5px 0;
     display: flex;
     flex-direction: column;
 }
@@ -799,7 +798,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         
         & > div{
             width: 20%;
-        }        
+        }  
 
         &-title{
             font-family: Raleway, sans-serif;
@@ -810,26 +809,26 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             margin-bottom: 24px;
         }
 
-        &-text{
-            font-family: Montserrat, sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            color: #555555;
-        }
-
-        &-date{
-            font-family: Montserrat, sans-serif;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 15px;
-            color: #363636;
-        }
-
         &-list_item{
             padding-bottom: 16px;
             border-bottom: 2px solid #555555;
             margin-bottom: 12px;
+
+            &-text{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #555555;
+            }
+ 
+            &-date{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 15px;
+                color: #363636;
+            }
         }
 
         &-list_item:last-child{
@@ -838,14 +837,30 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             margin-bottom: 0;
         }
 
+        &-list_item:hover{
+
+            .footer-content-list_item-text{
+                color: $COLOR_HOVER;
+            }
+
+            .footer-content-list_item-date{
+                color: $COLOR_SECONDARY;
+            }
+        }
+
         &-about_us{
 
             &-logo{
                 fill: $COLOR_SECONDARY;
                 margin-bottom: 18px;
             }
-
-            .footer-content-text{                
+            
+            &-text{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #555555;
                 margin-bottom: 18px;
             }
 
@@ -869,15 +884,19 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
         &-recent_posts{
 
-            .footer-content-date{
+            .footer-content-list_item-date{
                 margin-bottom: 6px;
             }
         }
 
         &-twitter{
 
-            .footer-content-text{
+            .footer-content-list_item-text{
                 margin-bottom: 6px;
+            }            
+
+            &-highlight{
+                color:  #00BFF3;;
             }
         }
 

@@ -1,7 +1,6 @@
 .container {
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 80px 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,7 +869,13 @@
   margin-bottom: 24px;
 }
 
-.footer-content-text {
+.footer-content-list_item {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #555555;
+  margin-bottom: 12px;
+}
+
+.footer-content-list_item-text {
   font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -878,18 +883,12 @@
   color: #555555;
 }
 
-.footer-content-date {
+.footer-content-list_item-date {
   font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
   color: #363636;
-}
-
-.footer-content-list_item {
-  padding-bottom: 16px;
-  border-bottom: 2px solid #555555;
-  margin-bottom: 12px;
 }
 
 .footer-content-list_item:last-child {
@@ -898,12 +897,25 @@
   margin-bottom: 0;
 }
 
+.footer-content-list_item:hover .footer-content-list_item-text {
+  color: #C7B299;
+}
+
+.footer-content-list_item:hover .footer-content-list_item-date {
+  color: #fff;
+}
+
 .footer-content-about_us-logo {
   fill: #fff;
   margin-bottom: 18px;
 }
 
-.footer-content-about_us .footer-content-text {
+.footer-content-about_us-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
   margin-bottom: 18px;
 }
 
@@ -925,12 +937,16 @@
           transform: translateY(2px);
 }
 
-.footer-content-recent_posts .footer-content-date {
+.footer-content-recent_posts .footer-content-list_item-date {
   margin-bottom: 6px;
 }
 
-.footer-content-twitter .footer-content-text {
+.footer-content-twitter .footer-content-list_item-text {
   margin-bottom: 6px;
+}
+
+.footer-content-twitter-highlight {
+  color: #00BFF3;
 }
 
 .footer-content-dribbble_widget-wrapper {
