@@ -790,7 +790,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-wrapper{            
             display: flex;
             justify-content: space-between;
-            padding: 80px 0 128px;              
+            padding: 80px 0 100px;              
             
             & > div{
                 width: 20%;
@@ -913,7 +913,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-copyright{        
-        padding: 55px 0;
+        padding: 40px 0;
         background: #101010;    
         
         &-wrapper{
