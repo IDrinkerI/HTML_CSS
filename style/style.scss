@@ -4,14 +4,17 @@ $COLOR_HOVER: #C7B299;
 $COLOR_CONTENT: #555555;
 $COLOR_TEXT: #8C8C8C;
 $COLOR_SECTION_BACKGROUND: #FBFAF8;
+$ANIMATE_PUSH_LINKBUTTON: pushing_link 0.1s linear;
+$ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
 
 .container{
     width: 1280px;
     margin: 0 auto;
     padding: 80px 5px 0;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .main_header{
     
@@ -28,12 +31,19 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         width: 80%;
         margin:0 auto;
         display: flex;
+        margin-bottom: 310px;
 
-        &-logolink{
-           
+        &-logolink{           
 
             svg{
                 fill: $COLOR_SECONDARY;
+            }
+        }
+
+        &-logolink:hover{
+
+            svg{
+                fill: $COLOR_HOVER;
             }
         }
 
@@ -44,7 +54,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             margin-right: 55px;
 
             &-item a{
-                font-family: Montserrat;
+                font-family: Montserrat, sans-serif;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 17px;
@@ -90,33 +100,37 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     &-slider{
         width: 1600px;
         margin: 0 auto;
-        padding-top: 310px;
         display: flex;
         justify-content: space-between;
         color: $COLOR_SECONDARY;
         text-align: center;
         position: relative;
 
+        &-wrapper{
+            margin-bottom: 310px;
+        }
+
         &-pretitle{
-            font-family: Raleway;
+            font-family: Raleway, sans-serif;
             font-weight: 500;
             font-size: 36px;
             line-height: 42px;
         }
 
         &-title{
-            font-family: Raleway;
+            font-family: Raleway, sans-serif;
             font-weight: 600;
             font-size: 52px;
             line-height: 61px;
+            margin-bottom: 6px;
         }
 
         &-text{
-            font-family: Montserrat;
+            font-family: Montserrat, sans-serif;
             font-size: 16px;
             line-height: 20px;
             max-width: 560px;
-            margin-bottom: 40px;
+            margin: 0 auto 40px;
         }
 
         &-link{
@@ -128,11 +142,18 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             border-radius: 3px;
             padding: 20px 40px;
             width: fit-content;
-            margin: 0 auto 310px;
+            margin: 0 auto;            
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
         }
 
         &-link:hover{
             background-color: $COLOR_HOVER;
+        }
+
+        &-link:active{
+            animation: $ANIMATE_PUSH_LINKBUTTON;
         }
 
         &-button{
@@ -148,14 +169,35 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         }
 
         &-button:active{            
-            opacity: 0.5;
+            opacity: 0.5;            
+            animation: $ANIMATE_PUSH_BUTTON;
         }
 
-        &-progressbar{
+        &-switcher{
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translate(-50%);
+
+            &-button{
+                width: 12px;
+                height: 12px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: rgba(255, 255, 255, 0.5);
+                outline-style: none;
+            }
+
+            &-button:hover{
+                border-color: rgba(255, 255, 255, 0.5);
+                transform: scale(1.5);
+                background-color: transparent;
+            }
+
+            &-button:last-child{
+                margin-right: 0;
+            }
         }
     }
 }
@@ -163,7 +205,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
 .content{
 
     &-title{
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-weight: 600;
         font-size: 30px;
         line-height: 35px;
@@ -173,7 +215,7 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     }
 
     &-text{
-        font-family: Montserrat;
+        font-family: Montserrat, sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 20px;
@@ -181,11 +223,37 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
         color: $COLOR_TEXT;
     }
 
+    &-button_link{
+        display: block;
+        color: $COLOR_SECONDARY;
+        background-color: $COLOR_PRIMARY;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 20px 40px;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        //width: fit-content;
+        // height: fit-content;      
+    }
+
+    &-button_link:hover{
+        background-color: $COLOR_HOVER;
+    }
+
+    &-button_link:active{
+        animation: $ANIMATE_PUSH_LINKBUTTON;
+    }
+
+    ////////////////
+    // Main Sections
+    ////////////////
     &-partition_switcher{
         
         .container{
-            display: flex;
             padding-bottom: 80px;
+            flex-direction: row;
             justify-content: space-around;
         }
 
@@ -197,24 +265,24 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
             svg{
                 fill: $COLOR_CONTENT;
                 height: 47px;
+                margin-bottom: 30px;
             }
 
             &-title{
                 margin: 0 auto;                
                 width: 270px;
-                padding-top: 30px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 font-weight: 600;
                 font-size: 22px;
                 line-height: 26px;
+                margin-bottom: 20px;
             }
 
             &-description{
                 margin: 0 auto;
                 width: 270px;
-                padding-top: 20px;
                 margin-bottom: 30px;
-                font-family: Montserrat;
+                font-family: Montserrat, sans-serif;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 17px;
@@ -245,13 +313,477 @@ $COLOR_SECTION_BACKGROUND: #FBFAF8;
     &-realization{
         background-color: $COLOR_SECTION_BACKGROUND;
 
+        .container{           
+            flex-direction: column;
+        }
+
         .content-text{
             width: 770px;
             margin: 0 auto;
+            margin-bottom: 42px;
+        }
+    }
+
+    &-purchase_now{
+        background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+
+        .container{
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 45px 0;
+        }
+
+        &-title{
+            font-family: Raleway, sans-serif;
+            font-size: 28px;
+            line-height: 33px;
+            color: $COLOR_SECONDARY;
+
+            &-company_name{
+                color: $COLOR_HOVER;
+            }
+        }
+
+        &-text{
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color:$COLOR_SECONDARY;
+            opacity: 0.7;            
+        }
+    }
+
+    &-latest_projects{
+        padding-bottom: 32px;
+
+        .content-text{
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 34px;
+        }
+
+        &-links_wrapper{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        &-link{
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #EBEBEB;
+            border-radius: 3px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #8C8C8C;
+            margin-right: 10px;
+        }
+
+        &-link:hover{
+            background-color: $COLOR_HOVER;
+            color: $COLOR_SECONDARY;
+        }
+
+        &-link:active{
+            animation: $ANIMATE_PUSH_LINKBUTTON;
+        }
+
+        &-link:last-child{
+            margin-right: 0;
+        }
+
+        &-cards_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 48px;
+        }        
+
+        &-card{
+            width: 370px;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            
+
+            &-caption{
+                background-color: $COLOR_SECTION_BACKGROUND;
+                padding: 24px;
+            }
+
+            &-title{
+                display: block;
+                font-family: Raleway, sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;     
+                color: $COLOR_HOVER;
+                margin-bottom: 8px;
+            }
+
+            &-description{
+                display: block;
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #D1D1D1;
+            }
+        }
+
+        &-card:hover{
+
+            .content-latest_projects-card-title{
+                color: $COLOR_SECONDARY;
+            }
+
+            .content-latest_projects-card-description{
+                color: $COLOR_HOVER;
+            }
+
+            .content-latest_projects-card-caption{
+                background-color: #352F2D;
+            }
+
+            .content-latest_projects-card-image{
+                filter: brightness(50%);
+            }
+        }
+
+        .content-button_link{
+            margin: 0 auto;
+        }
+    }
+
+    &-video_presentation{
+        background-image: url(../image/bg_video_presentation.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 705px;
+        position: relative;
+
+        &-wrapper{            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-play_button{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);            
+            border: none;
+            outline-style: none;
+            margin-bottom: 32px;
+            position: relative;
+
+            svg{
+                fill: $COLOR_SECONDARY;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-play_button:hover{
+
+            svg{
+                fill: $COLOR_HOVER;
+            }
+        }
+
+        &-play_button:active {
+            animation: $ANIMATE_PUSH_BUTTON;            
+        }
+
+        .content-title{
+            color: $COLOR_SECONDARY;
+        }
+
+        .content-text{
+            color: $COLOR_SECONDARY;
+            width: 570px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &-mobile_devices{
+
+        .container{
+            background-image: url(../image/phone.png);
+            background-position: left bottom;
+            background-repeat: no-repeat;
+        }
+
+        &-wrapper{
+            width: 670px;
+            margin-left: auto;
+            padding: 110px 0 200px;
+        }
+
+        .content-title{
+            text-align: left;
+        }
+
+        .content-text{
+            text-align: left;
+        }
+
+        &-properties_list{
+            padding-top: 50px;
+
+            &-item{
+                margin-bottom: 12px;
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: $COLOR_TEXT;
+            }
+
+            &-item::before{
+                content: " ";
+                width: 22px;
+                height: 22px;
+                background-image: url(../image/01_op.svg);
+                float: left;
+                margin-right: 8px;
+                transform: translatey(-2px);
+            }
+        }
+    }
+
+    &-counters{
+        background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+
+        .container{
+            flex-direction: row;
+            justify-content: center;
+            padding: 36px 0;
+        }
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            width: 115px;
+            align-items: center;
+            margin-right: 72px;
+
+            svg{
+                fill: $COLOR_HOVER;
+                margin-bottom: 4px;
+            }
+
+            &-value{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 59px;
+                color: $COLOR_SECONDARY;  
+            }
+
+            &-name{
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: $COLOR_HOVER;
+                margin-bottom: 12px;
+            }
+
+            hr{
+                width: 30px;
+            }
+        }
+
+        &-card:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &-recent_posts{
+        
+        .container{
+            align-items: center;
+            padding-bottom: 32px;
+        }
+
+        .content-text{
+            width: 770px;
+            margin-bottom: 32px;
+        }
+
+        &-cards_wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &-card{
+            width: 370px;
+            border: 1px solid #B3B3B3;
+            margin-bottom: 54px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            &-calendar{
+                position: absolute;
+                left: 22px;
+                top: 18px;
+                text-align: center;
+                width: 50px;
+                $CALENDAR_BORDER_RADIUS: 4px;
+                z-index: 1;
+
+                &-date{
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: $COLOR_SECONDARY;
+                    background-color: rgba(0, 0, 0, 0.5);                    
+                    border-top-left-radius: $CALENDAR_BORDER_RADIUS;
+                    border-top-right-radius: $CALENDAR_BORDER_RADIUS;
+                }
+
+                &-month{
+                    font-family: Roboto, sans-serif;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: $COLOR_SECONDARY;                    
+                    background-color: rgba(0, 0, 0, 0.7);
+                    padding: 5px 0;
+                    border-bottom-left-radius: $CALENDAR_BORDER_RADIUS;
+                    border-bottom-right-radius: $CALENDAR_BORDER_RADIUS;
+                }
+            }
+            
+            &-image{
+                width: 100%;
+            }
+
+            figcaption{
+                padding: 32px 24px 24px;
+            }
+
+            &-title{
+                font-family: Raleway;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: $COLOR_CONTENT;
+                margin-bottom: 22px;
+            }
+
+            &-description{                
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                color: $COLOR_CONTENT;
+                margin-bottom: 18px;
+            }
+
+            &-link{
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration: none;
+                color: $COLOR_HOVER;
+            }
+
+            &-link::after{
+                content: "";
+                border: 6px solid transparent;
+                border-left: 6px solid $COLOR_HOVER;
+                display: inline-block;
+                margin-left: 8px;
+                transform: translateY(2px);
+            }
+        }
+
+        &-card:hover {            
+            background-color: #352F2D;
+
+            .content-recent_posts-card-calendar-date{
+                background-color: $COLOR_HOVER;
+            }
+
+            .content-recent_posts-card-calendar-month{
+                background-color: #A48D71;
+            }
+
+            .content-recent_posts-card-image{
+                filter: brightness(50%);
+            }       
+
+            .content-recent_posts-card-title{
+                color: $COLOR_HOVER;
+            }
+        
+            .content-recent_posts-card-description{
+                color: $COLOR_SECONDARY;
+            }
+        }
+
+        &-button{
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            position: relative;
+            outline-style: none;
+            border: none;
+            background-color: transparent;
+            margin: 0 8px;
+
+            svg{
+                fill: #D1D1D1;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-button:hover svg{
+            fill: $COLOR_HOVER;
+        }
+
+        &-button:active{
+            animation: $ANIMATE_PUSH_BUTTON;
+        }
+    }
+
+    &-partners{
+        background-image: url(../image/bg_partners.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 0 140px;
         }
 
         &-image{
-            padding-top: 40px;
+            width: fit-content;
+            height: fit-content;
+            margin-right: 75px;
+        }
+
+        &-image:last-child{
+            margin-right: 0;
         }
     }
 }
