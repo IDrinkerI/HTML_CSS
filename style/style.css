@@ -227,7 +227,7 @@
 }
 
 .content-partition_switcher-wrapper {
-  padding: 7% 0;
+  padding: 6% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +290,10 @@
 
 .content-realization {
   background-color: #FBFAF8;
-  padding-top: 80px;
+}
+
+.content-realization-wrapper {
+  padding-top: 6%;
 }
 
 .content-realization .content-text {

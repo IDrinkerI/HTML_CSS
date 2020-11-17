@@ -3,7 +3,6 @@ $COLOR_SECONDARY: #fff;
 $COLOR_HOVER: #C7B299;
 $COLOR_CONTENT: #555555;
 $COLOR_TEXT: #8C8C8C;
-$COLOR_SECTION_BACKGROUND: #FBFAF8;
 $ANIMATE_PUSH_LINKBUTTON: pushing_link 0.1s linear;
 $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
@@ -239,7 +238,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     &-partition_switcher{
         
         &-wrapper{
-            padding: 7% 0;
+            padding: 6% 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -298,8 +297,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-realization{
-        background-color: $COLOR_SECTION_BACKGROUND;
-        padding-top: 80px;
+        background-color:  #FBFAF8;
+
+        &-wrapper{
+            padding-top: 6%;
+        }
 
         .content-text{
             width: 48.125rem;
@@ -400,7 +402,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
 
             &-caption{
-                background-color: $COLOR_SECTION_BACKGROUND;
+                background-color: #FBFAF8;
                 padding: 24px;
             }
 
