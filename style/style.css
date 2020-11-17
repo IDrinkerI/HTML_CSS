@@ -575,7 +575,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 36px 0;
+  padding: 3% 0;
 }
 
 .content-counters-card {
@@ -593,12 +593,12 @@
 }
 
 .content-counters-card:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 5%;
 }
 
 .content-counters-card svg {
   fill: #C7B299;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .content-counters-card-value {

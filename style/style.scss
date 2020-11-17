@@ -564,7 +564,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-wrapper{
             display: flex;
             justify-content: center;
-            padding: 36px 0;
+            padding: 3% 0;
         }
 
         &-card{
@@ -574,12 +574,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             align-items: center;
 
             &:not(:last-child){
-                margin-right: 70px;
+                margin-right: 5%;
             }
 
             svg{
                 fill: $COLOR_HOVER;
-                margin-bottom: 4px;
+                margin-bottom: 0.25rem;
             }
 
             &-value{
