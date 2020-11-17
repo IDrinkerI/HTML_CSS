@@ -98,7 +98,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         position: relative;
 
         &-wrapper{
-            margin-bottom: 260px;
+            margin-bottom: 300px;
         }
 
         &-pretitle{
@@ -371,7 +371,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             font-family: Montserrat, sans-serif;
             font-weight: 300;
             font-size: 0.875rem;
-            color: #8C8C8C;
+            color: $COLOR_TEXT;
 
             &:not(:last-child){
                 margin-right: 0.625rem;
