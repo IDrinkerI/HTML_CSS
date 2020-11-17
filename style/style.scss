@@ -45,6 +45,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             margin-right: 50px;
 
             &-item {
+                
+                &:not(:last-of-type){
+                    margin-right: 1.5rem;
+                }
+
                 a{
                     font-family: Montserrat, sans-serif;
                     font-weight: 300;
@@ -54,33 +59,27 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                     text-decoration: none;
                 }
 
-                &:not(:last-of-type){
-                    margin-right: 1.5rem;
+                &:hover a{
+                        color: $COLOR_HOVER;
                 }
-
-            }
-
-            &-item a:hover{
-                color: $COLOR_HOVER;
-            }
+            }            
         }
 
         &-service_list{
             display: flex;
 
-            &-item a{
-                margin-right: 2rem;
+            &-item {
+                
+                &:not(:last-of-type){
+                    margin-right: 2rem;
+                }
 
-                svg{
+                a svg{
                     fill: $COLOR_SECONDARY;
-                }                
+                }
             }
 
-            &-item:last-child a{
-                margin-right: 0;
-            }
-
-            &-item a:hover{                
+            &-item:hover a{                
 
                 svg{
                     fill: $COLOR_HOVER;
@@ -138,15 +137,16 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             font-family: Roboto, sans-serif;
             font-size: 0.875rem;
             line-height: 1rem;
+
+            &:hover{
+                background-color: $COLOR_HOVER;
+            }
+
+            &:active{
+                animation: $ANIMATE_PUSH_LINKBUTTON;
+            }
         }
 
-        &-link:hover{
-            background-color: $COLOR_HOVER;
-        }
-
-        &-link:active{
-            animation: $ANIMATE_PUSH_LINKBUTTON;
-        }
 
         &-button{
             height: fit-content;
@@ -158,11 +158,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             svg{
                 fill: $COLOR_SECONDARY;
             }
-        }
 
-        &-button:active{            
-            opacity: 0.5;            
-            animation: $ANIMATE_PUSH_BUTTON;
+            &:active{            
+                opacity: 0.5;            
+                animation: $ANIMATE_PUSH_BUTTON;
+            }
         }
 
         &-switcher{
@@ -175,21 +175,21 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 width: 12px;
                 height: 12px;
                 border: 1px solid transparent;
-                border-radius: 50%;
-                margin-right: 10px;
+                border-radius: 50%;                
                 background-color: rgba(255, 255, 255, 0.5);
                 outline-style: none;
+
+                &:not(:last-of-type){
+                    margin-right: 10px;;
+                }
+
+                &:hover{
+                    border-color: rgba(255, 255, 255, 0.5);
+                    transform: scale(1.5);
+                    background-color: transparent;
+                }
             }
 
-            &-button:hover{
-                border-color: rgba(255, 255, 255, 0.5);
-                transform: scale(1.5);
-                background-color: transparent;
-            }
-
-            &-button:last-child{
-                margin-right: 0;
-            }
         }
     }
 }
@@ -286,19 +286,20 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 border-style: solid;
                 opacity: 0.3;
             }
+
+            &:hover{
+                color: $COLOR_HOVER;            
+    
+                svg{
+                    fill: $COLOR_HOVER;                
+                }
+    
+                hr{
+                    opacity: 1;
+                }
+            }
         }
 
-        &-card:hover{
-            color: $COLOR_HOVER;            
-
-            svg{
-                fill: $COLOR_HOVER;                
-            }
-
-            hr{
-                opacity: 1;
-            }
-        }
     }
 
     &-realization{
@@ -371,20 +372,21 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             font-weight: 300;
             font-size: 0.875rem;
             color: #8C8C8C;
+
+            &:not(:last-child){
+                margin-right: 0.625rem;
+            }
+    
+            &:hover{
+                background-color: $COLOR_HOVER;
+                color: $COLOR_SECONDARY;
+            }
+    
+            &:active{
+                animation: $ANIMATE_PUSH_LINKBUTTON;
+            }
         }
         
-        &-link:not(:last-child){
-            margin-right: 0.625rem;
-        }
-
-        &-link:hover{
-            background-color: $COLOR_HOVER;
-            color: $COLOR_SECONDARY;
-        }
-
-        &-link:active{
-            animation: $ANIMATE_PUSH_LINKBUTTON;
-        }
 
         &-cards_wrapper{
             display: flex;
@@ -425,24 +427,24 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 line-height: 1rem;
                 color: #D1D1D1;
             }
-        }
 
-        &-card:hover{
-
-            .content-latest_projects-card-title{
-                color: $COLOR_SECONDARY;
-            }
-
-            .content-latest_projects-card-description{
-                color: $COLOR_HOVER;
-            }
-
-            .content-latest_projects-card-caption{
-                background-color: #352F2D;
-            }
-
-            .content-latest_projects-card-image{
-                filter: brightness(50%);
+            &:hover{
+    
+                .content-latest_projects-card-title{
+                    color: $COLOR_SECONDARY;
+                }
+    
+                .content-latest_projects-card-description{
+                    color: $COLOR_HOVER;
+                }
+    
+                .content-latest_projects-card-caption{
+                    background-color: #352F2D;
+                }
+    
+                .content-latest_projects-card-image{
+                    filter: brightness(50%);
+                }
             }
         }
 
@@ -485,17 +487,17 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-        }
 
-        &-play_button:hover{
-
-            svg{
-                fill: $COLOR_HOVER;
+            &:hover{
+    
+                svg{
+                    fill: $COLOR_HOVER;
+                }
             }
-        }
-
-        &-play_button:active {
-            animation: $ANIMATE_PUSH_BUTTON;            
+    
+            &:active {
+                animation: $ANIMATE_PUSH_BUTTON;            
+            }
         }
 
         .content-title{
@@ -542,16 +544,16 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 font-size: 1rem;
                 line-height: 1.25rem;
                 color: $COLOR_TEXT;
-            }
-
-            &-item::before{
-                content: " ";
-                width: 22px;
-                height: 22px;
-                background-image: url(../image/01_op.svg);
-                float: left;
-                margin-right: 0.5rem;
-                transform: translatey(-0.125rem);
+                
+                &::before{
+                    content: " ";
+                    width: 22px;
+                    height: 22px;
+                    background-image: url(../image/01_op.svg);
+                    float: left;
+                    margin-right: 0.5rem;
+                    transform: translatey(-0.125rem);
+                }
             }
         }
     }
@@ -570,6 +572,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             flex-direction: column;
             width: 10%;
             align-items: center;
+
+            &:not(:last-child){
+                margin-right: 70px;
+            }
 
             svg{
                 fill: $COLOR_HOVER;
@@ -596,10 +602,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             hr{
                 width: 25%;
             }
-        }
-
-        &-card:not(:last-child){
-            margin-right: 70px;
         }
     }
 
@@ -695,39 +697,39 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 line-height: 17px;
                 text-decoration: none;
                 color: $COLOR_HOVER;
+
+                &::after{
+                    content: "";
+                    border: 0.375rem solid transparent;
+                    border-left: 0.375rem solid $COLOR_HOVER;
+                    display: inline-block;
+                    margin-left: 0.5rem;
+                    transform: translateY(2px);
+                }
             }
 
-            &-link::after{
-                content: "";
-                border: 0.375rem solid transparent;
-                border-left: 0.375rem solid $COLOR_HOVER;
-                display: inline-block;
-                margin-left: 0.5rem;
-                transform: translateY(2px);
-            }
-        }
-
-        &-card:hover {            
-            background-color: #352F2D;
-
-            .content-recent_posts-card-calendar-date{
-                background-color: $COLOR_HOVER;
-            }
-
-            .content-recent_posts-card-calendar-month{
-                background-color: #A48D71;
-            }
-
-            .content-recent_posts-card-image{
-                filter: brightness(50%);
-            }       
-
-            .content-recent_posts-card-title{
-                color: $COLOR_HOVER;
-            }
-        
-            .content-recent_posts-card-description{
-                color: $COLOR_SECONDARY;
+            &:hover {            
+                background-color: #352F2D;
+    
+                .content-recent_posts-card-calendar-date{
+                    background-color: $COLOR_HOVER;
+                }
+    
+                .content-recent_posts-card-calendar-month{
+                    background-color: #A48D71;
+                }
+    
+                .content-recent_posts-card-image{
+                    filter: brightness(50%);
+                }       
+    
+                .content-recent_posts-card-title{
+                    color: $COLOR_HOVER;
+                }
+            
+                .content-recent_posts-card-description{
+                    color: $COLOR_SECONDARY;
+                }
             }
         }
 
@@ -748,14 +750,14 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
-        }
 
-        &-button:hover svg{
-            fill: $COLOR_HOVER;
-        }
-
-        &-button:active{
-            animation: $ANIMATE_PUSH_BUTTON;
+            &:hover svg{
+                fill: $COLOR_HOVER;
+            }
+    
+            &:active{
+                animation: $ANIMATE_PUSH_BUTTON;
+            }
         }
     }
 
@@ -773,12 +775,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
         &-image{
             width: fit-content;
-            height: fit-content;
-            margin-right: 75px;
-        }
+            height: fit-content;            
 
-        &-image:last-child{
-            margin-right: 0;
+            &:not(:last-of-type){
+                margin-right: 75px;
+            }
         }
     }
 }
@@ -808,9 +809,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         }
 
         &-list_item{
-            padding-bottom: 1rem;
-            border-bottom: 2px solid $COLOR_CONTENT;
-            margin-bottom: 0.75rem;
+            
+            &:not(:last-of-type){
+                padding-bottom: 1rem;
+                border-bottom: 2px solid $COLOR_CONTENT;
+                margin-bottom: 0.75rem;
+            }            
 
             &-text{
                 font-family: Montserrat, sans-serif;
@@ -827,22 +831,16 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 line-height: 1rem;
                 color: #363636;
             }
-        }
-
-        &-list_item:last-child{
-            border-bottom: 2px solid transparent;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-
-        &-list_item:hover{
-
-            .footer-content-list_item-text{
-                color: $COLOR_HOVER;
-            }
-
-            .footer-content-list_item-date{
-                color: $COLOR_SECONDARY;
+    
+            &:hover{
+    
+                .footer-content-list_item-text{
+                    color: $COLOR_HOVER;
+                }
+    
+                .footer-content-list_item-date{
+                    color: $COLOR_SECONDARY;
+                }
             }
         }
 
@@ -868,15 +866,15 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 line-height: 1rem;
                 color: #D1D1D1;
                 text-decoration: none;
-            }
-
-            &-link::after{
-                content: "";
-                display: inline-block;
-                border: 0.375rem solid transparent;
-                border-left: 0.375rem solid $COLOR_SECONDARY;
-                margin-left: 0.375rem;
-                transform: translateY(2px);
+    
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    border: 0.375rem solid transparent;
+                    border-left: 0.375rem solid $COLOR_SECONDARY;
+                    margin-left: 0.375rem;
+                    transform: translateY(2px);
+                }
             }
         }
 
@@ -943,12 +941,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                     font-size: 0.8125rem;
                     line-height: 1rem;
                     color:$COLOR_CONTENT;
-                    text-decoration: none;;
-                }
+                    text-decoration: none;
 
-                &-link:hover{
-                    color: #BAA78F;
-                }
+                    &:hover{
+                        color: #BAA78F;
+                    }
+                }                
             }
         }
     }
