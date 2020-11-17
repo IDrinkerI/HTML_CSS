@@ -7,31 +7,31 @@
         width: 768px;
     }
 
-    .main_header{        
+    // .main_header{        
 
-        &-navigator{
-            margin-bottom: 150px;
+    //     &-navigator{
+    //         margin-bottom: 150px;
 
-            &-logolink{
+    //         &-logolink{
 
-                svg{
-                    transform: translateX(-20px) scale(0.7);
-                }
-            }
+    //             svg{
+    //                 transform: translateX(-20px) scale(0.7);
+    //             }
+    //         }
 
-            &-link_list{
-                margin-right: 0;
+    //         &-link_list{
+    //             margin-right: 0;
 
-                &-item{
-                    margin-right: 12px;
-                }
-            }
+    //             &-item{
+    //                 margin-right: 12px;
+    //             }
+    //         }
 
-            &-service_list{
-                display: none;
-            }
-        }
-    }    
+    //         &-service_list{
+    //             display: none;
+    //         }
+    //     }
+    // }    
 }
 
 @media (max-width: 768px){
@@ -53,29 +53,29 @@
         width: 320px;
     }
 
-    .main_header{
-        height: fit-content;
+    // .main_header{
+    //     height: fit-content;
 
-        &-navigator{            
-            margin: 0;
+    //     &-navigator{            
+    //         margin: 0;
 
-            &-logolink{
-                svg{
-                    transform: scale(0.7);
-                }
-            }
+    //         &-logolink{
+    //             svg{
+    //                 transform: scale(0.7);
+    //             }
+    //         }
             
-            &-link_list{
-                visibility: hidden;
-            } 
+    //         &-link_list{
+    //             visibility: hidden;
+    //         } 
             
-            &-service_list{
-                visibility: hidden;
-            }
-        }
+    //         &-service_list{
+    //             visibility: hidden;
+    //         }
+    //     }
 
-        &-slider{
-            display: none;
-        }
-    }
+    //     &-slider{
+    //         display: none;
+    //     }
+    // }
 }
