@@ -346,12 +346,15 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-latest_projects{
-        padding: 80px 0 32px;
 
         .content-text{
             width: 50rem;
             margin: 0 auto;
             margin-bottom: 2rem;
+        }
+
+        &-wrapper{            
+            padding: 6.5% 0 3%;
         }
 
         &-links_wrapper{
@@ -361,10 +364,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         }
 
         &-link{
-            padding: 8px 16px;
+            padding: 0.5rem 1rem;
             text-decoration: none;
             border: 1px solid #EBEBEB;
-            border-radius: 3px;
+            border-radius: 0.1875rem;
             font-family: Montserrat, sans-serif;
             font-weight: 300;
             font-size: 0.875rem;
@@ -382,19 +385,18 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             &:active{
                 animation: $ANIMATE_PUSH_LINKBUTTON;
             }
-        }
-        
+        }        
 
         &-cards_wrapper{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 48px;
+            margin-bottom: 4%;
         }        
 
         &-card{
-            width: 370px;
-            margin-top: 70px;
+            width: 30%;
+            margin-top: 6%;
             
             &-image{
                 display: block;
@@ -403,7 +405,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
             &-caption{
                 background-color: #FBFAF8;
-                padding: 24px;
+                padding: 1.5rem;
             }
 
             &-title{
