@@ -227,7 +227,7 @@
 }
 
 .content-partition_switcher-wrapper {
-  padding: 6% 0;
+  padding: 6.5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +293,7 @@
 }
 
 .content-realization-wrapper {
-  padding-top: 6%;
+  padding-top: 6.5%;
 }
 
 .content-realization .content-text {
@@ -309,10 +309,10 @@
 
 .content-purchase_now {
   background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
-  padding: 45px 0;
 }
 
 .content-purchase_now-wrapper {
+  padding: 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

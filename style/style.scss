@@ -238,7 +238,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     &-partition_switcher{
         
         &-wrapper{
-            padding: 6% 0;
+            padding: 6.5% 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -300,7 +300,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         background-color:  #FBFAF8;
 
         &-wrapper{
-            padding-top: 6%;
+            padding-top: 6.5%;
         }
 
         .content-text{
@@ -316,10 +316,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-purchase_now{
-        background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
-        padding: 45px 0;
+        background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);        
 
          &-wrapper{
+            padding: 4% 0;
              display: flex;
              justify-content: space-between;
          }
