@@ -218,12 +218,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         text-decoration: none;
         text-transform: uppercase;
         border-radius: 3px;
-        padding: 20px 40px;
+        padding: 1.25rem 2.5rem;
         font-family: Roboto, sans-serif;
         font-size: 0.875rem;
         line-height: 1rem;
         width: fit-content;
-        // height: fit-content;      
     }
 
     &-button_link:hover{
@@ -240,16 +239,16 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     &-partition_switcher{
         
         &-wrapper{
-            padding: 85px 0;
+            padding: 7% 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
 
         &-card{
             color: $COLOR_CONTENT;
             text-align: center;
-            width: 18.75rem;
+            width: 23%;
 
             svg{
                 fill: $COLOR_CONTENT;
@@ -278,7 +277,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
             hr{                
                 width: 4rem;
-                border-top-width: 3px;
+                border-top-width: 0.1875rem;
                 border-style: solid;
                 opacity: 0.3;
             }
