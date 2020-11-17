@@ -633,11 +633,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0 32px;
+  padding: 6.5% 0 3%;
 }
 
 .content-recent_posts .content-text {
-  width: 110.625rem;
+  width: 48rem;
   margin-bottom: 2rem;
 }
 
@@ -648,21 +648,21 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 4.5%;
 }
 
 .content-recent_posts-card {
-  width: 370px;
+  width: 30%;
   border: 1px solid #B3B3B3;
-  margin-bottom: 54px;
   position: relative;
 }
 
 .content-recent_posts-card-calendar {
   position: absolute;
-  left: 22px;
-  top: 18px;
+  left: 6%;
+  top: 5%;
   text-align: center;
-  width: 50px;
+  width: 14%;
   z-index: 1;
 }
 
@@ -673,8 +673,8 @@
   line-height: 2.375rem;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 
 .content-recent_posts-card-calendar-month {
@@ -684,8 +684,8 @@
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.3rem 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 .content-recent_posts-card-image {
@@ -694,11 +694,11 @@
 }
 
 .content-recent_posts-card figcaption {
-  padding: 32px 24px 24px;
+  padding: 9% 6.5% 6.5%;
 }
 
 .content-recent_posts-card-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -707,7 +707,7 @@
 }
 
 .content-recent_posts-card-description {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -716,10 +716,10 @@
 }
 
 .content-recent_posts-card-link {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   text-decoration: none;
   color: #C7B299;
 }
@@ -767,7 +767,7 @@
   outline-style: none;
   border: none;
   background-color: transparent;
-  margin: 0 8px;
+  margin: 0 0.5rem;
 }
 
 .content-recent_posts-button svg {
