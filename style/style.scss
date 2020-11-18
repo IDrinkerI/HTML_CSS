@@ -792,7 +792,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-wrapper{            
             display: flex;
             justify-content: space-between;
-            padding: 80px 0 100px;              
+            padding: 6.5% 0 8%;              
             
             & > div{
                 width: 20%;
@@ -848,7 +848,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
             &-logo{
                 fill: $COLOR_SECONDARY;
-                margin-bottom: 18px;
+                margin-bottom: 1.125rem;
             }
             
             &-text{
@@ -912,7 +912,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-copyright{        
-        padding: 40px 0;
+        padding: 2.5% 0;
         background: #101010;    
         
         &-wrapper{
@@ -925,15 +925,15 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             font-size: 0.8125rem;
             line-height: 1rem;
             color:$COLOR_CONTENT;
-            margin-right: 12px;
+            margin-right: 0.75%;
         }
 
         &-link_list{
             display: flex;
 
             &-item{
-                border-left: 2px solid #202020;
-                padding: 0 12px;
+                border-left: 0.125rem solid #202020;
+                padding: 0 0.75rem;
 
                 &-link{         
                     font-family: Montserrat, sans-serif;

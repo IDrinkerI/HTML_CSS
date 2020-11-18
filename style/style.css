@@ -831,7 +831,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 80px 0 100px;
+  padding: 6.5% 0 8%;
 }
 
 .footer-content-wrapper > div {
@@ -879,7 +879,7 @@
 
 .footer-content-about_us-logo {
   fill: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .footer-content-about_us-text {
@@ -938,7 +938,7 @@
 }
 
 .footer-copyright {
-  padding: 40px 0;
+  padding: 2.5% 0;
   background: #101010;
 }
 
@@ -954,7 +954,7 @@
   font-size: 0.8125rem;
   line-height: 1rem;
   color: #555555;
-  margin-right: 12px;
+  margin-right: 0.75%;
 }
 
 .footer-copyright-link_list {
@@ -964,8 +964,8 @@
 }
 
 .footer-copyright-link_list-item {
-  border-left: 2px solid #202020;
-  padding: 0 12px;
+  border-left: 0.125rem solid #202020;
+  padding: 0 0.75rem;
 }
 
 .footer-copyright-link_list-item-link {
