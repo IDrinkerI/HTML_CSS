@@ -411,6 +411,15 @@
 .content-latest_projects-card-caption {
   background-color: #FBFAF8;
   padding: 1.5rem;
+  position: relative;
+}
+
+.content-latest_projects-card-caption::before {
+  content: "";
+  position: absolute;
+  top: -1.45rem;
+  border: 1rem solid transparent;
+  border-bottom: 0.5rem solid #FBFAF8;
 }
 
 .content-latest_projects-card-title {
@@ -442,6 +451,10 @@
 
 .content-latest_projects-card:hover .content-latest_projects-card-caption {
   background-color: #352F2D;
+}
+
+.content-latest_projects-card:hover .content-latest_projects-card-caption::before {
+  border-bottom: 0.5rem solid #352F2D;
 }
 
 .content-latest_projects-card:hover .content-latest_projects-card-image {

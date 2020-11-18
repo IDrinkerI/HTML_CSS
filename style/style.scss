@@ -395,7 +395,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
         &-card{
             width: 30%;
-            margin-top: 6%;
+            margin-top: 6%;          
             
             &-image{
                 display: block;
@@ -405,6 +405,15 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             &-caption{
                 background-color: #FBFAF8;
                 padding: 1.5rem;
+                position: relative;
+            }
+
+            &-caption::before{
+                content: "";
+                position: absolute;
+                top: -1.45rem;
+                border: 1rem solid transparent;
+                border-bottom: 0.5rem solid #FBFAF8;
             }
 
             &-title{
@@ -438,6 +447,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     
                 .content-latest_projects-card-caption{
                     background-color: #352F2D;
+                }
+
+                .content-latest_projects-card-caption::before{
+                    border-bottom: 0.5rem solid #352F2D;
                 }
     
                 .content-latest_projects-card-image{
