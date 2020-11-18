@@ -1,46 +1,84 @@
 @media (max-width: 1200px){
     html{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .container{
         width: 768px;
     }
 
-    // .main_header{        
+    .main_header{        
 
-    //     &-navigator{
-    //         margin-bottom: 150px;
+        &-navigator{            
 
-    //         &-logolink{
+            &-logolink svg{
+                transform: translateX(-20px) scale(0.7);
+            }
+            
+            &-service_list-item a svg{
+                transform: scale(0.7);
+            }
+        }
 
-    //             svg{
-    //                 transform: translateX(-20px) scale(0.7);
-    //             }
-    //         }
-
-    //         &-link_list{
-    //             margin-right: 0;
-
-    //             &-item{
-    //                 margin-right: 12px;
-    //             }
-    //         }
-
-    //         &-service_list{
-    //             display: none;
-    //         }
-    //     }
-    // }    
+        &-slider-button svg {
+            transform: scale(0.7);
+        }
+    }    
 }
 
 @media (max-width: 768px){
     html{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .container{
-        width: 600px;
+        width: 320px;
+    }
+
+    .main_header{
+
+        &-navigator{
+
+            .hamburger_button_label{
+                display: block;
+            }
+
+            
+            &-wrapper{
+                flex-direction: column;  
+                position: absolute;
+                top: 50px;
+                right: -200px;
+                background-color: #998575;
+                z-index: 1;
+                padding: 5px;
+                transition: right 0.2s linear;
+            }
+
+            &-link_list{
+                flex-direction: column;
+                margin-right: 0;
+
+                &-item{
+                    padding: 5px 0;
+
+                    &:not(:last-of-type){
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &-service_list{
+                justify-content: space-around;
+
+                &-item{
+
+                    &:not(:last-of-type){
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -53,29 +91,18 @@
         width: 320px;
     }
 
-    // .main_header{
-    //     height: fit-content;
+    .main_header{
+        height: fit-content;
 
-    //     &-navigator{            
-    //         margin: 0;
+        &-navigator{
 
-    //         &-logolink{
-    //             svg{
-    //                 transform: scale(0.7);
-    //             }
-    //         }
-            
-    //         &-link_list{
-    //             visibility: hidden;
-    //         } 
-            
-    //         &-service_list{
-    //             visibility: hidden;
-    //         }
-    //     }
+            .hamburger_button_label{
+                right: 10px;
+            }
+        }
 
-    //     &-slider{
-    //         display: none;
-    //     }
-    // }
+        &-slider{
+            display: none;
+        }
+    }
 }

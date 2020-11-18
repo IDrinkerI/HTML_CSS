@@ -1,18 +1,67 @@
 @media (max-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
   .container {
     width: 768px;
+  }
+  .main_header-navigator-logolink svg {
+    -webkit-transform: translateX(-20px) scale(0.7);
+            transform: translateX(-20px) scale(0.7);
+  }
+  .main_header-navigator-service_list-item a svg {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .main_header-slider-button svg {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   .container {
-    width: 600px;
+    width: 320px;
+  }
+  .main_header-navigator .hamburger_button_label {
+    display: block;
+  }
+  .main_header-navigator-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: -200px;
+    background-color: #998575;
+    z-index: 1;
+    padding: 5px;
+    -webkit-transition: right 0.2s linear;
+    transition: right 0.2s linear;
+  }
+  .main_header-navigator-link_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
+  .main_header-navigator-link_list-item {
+    padding: 5px 0;
+  }
+  .main_header-navigator-link_list-item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .main_header-navigator-service_list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main_header-navigator-service_list-item:not(:last-of-type) {
+    margin-right: 0;
   }
 }
 
@@ -22,6 +71,17 @@
   }
   .container {
     width: 320px;
+  }
+  .main_header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main_header-navigator .hamburger_button_label {
+    right: 10px;
+  }
+  .main_header-slider {
+    display: none;
   }
 }
 /*# sourceMappingURL=adaptive.css.map */
