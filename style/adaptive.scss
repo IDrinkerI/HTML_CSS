@@ -19,10 +19,6 @@
                 transform: scale(0.7);
             }
         }
-
-        &-slider-button svg {
-            transform: scale(0.7);
-        }
     }  
     
     .content-mobile_devices{
@@ -30,6 +26,10 @@
         &-wrapper{
             background-size: 42%;
         }
+    }
+
+    .footer-content-about_us-logo{
+        transform: scale(0.7) translateX(-20%);
     }
 }
 
@@ -39,7 +39,7 @@
     }
 
     .container{
-        width: 320px;
+        width: 568px;
     }
 
     .main_header{
@@ -49,17 +49,31 @@
             .hamburger_button_label{
                 display: block;
             }
-
             
+            // &-wrapper{
+            //     flex-direction: column;  
+            //     position: absolute;
+            //     top: 50px;
+            //     right: -200px;
+            //     background-color: #998575;
+            //     z-index: 1;
+            //     padding: 5px;
+            //     transition: right 0.2s linear;
+            // }
+
             &-wrapper{
-                flex-direction: column;  
+                flex-direction: column;
                 position: absolute;
-                top: 50px;
-                right: -200px;
+                top: 60px;
+                right: 10px;
+                visibility: hidden;
                 background-color: #998575;
                 z-index: 1;
                 padding: 5px;
-                transition: right 0.2s linear;
+            }
+
+            .hamburger_button_checkbox:checked ~ &-wrapper{
+                visibility: visible;
             }
 
             &-link_list{
@@ -86,6 +100,27 @@
                 }
             }
         }
+
+        &-slider-button svg {
+            transform: scale(0.7);
+        }
+
+        // &-slider-button{
+
+        //     &-left{
+        //         left: 5vw;
+        //     }
+        // }
+    }
+}
+
+@media (max-width: 568px){
+    html{
+        
+    }
+
+    .container{
+        width: 320px;
     }
 }
 
