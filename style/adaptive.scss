@@ -23,7 +23,14 @@
         &-slider-button svg {
             transform: scale(0.7);
         }
-    }    
+    }  
+    
+    .content-mobile_devices{
+
+        &-wrapper{
+            background-size: 42%;
+        }
+    }
 }
 
 @media (max-width: 768px){

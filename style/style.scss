@@ -80,7 +80,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
             &:checked ~ .main_header-navigator-wrapper{                
                
-                // transform: translateX(-300px); 
                 right: 0;
             }
         }
@@ -660,6 +659,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                     width: 1.375rem;
                     height: 1.375rem;
                     background-image: url(../image/01_op.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
                     float: left;
                     margin-right: 0.5rem;
                     transform: translatey(-0.125rem);
@@ -706,11 +707,13 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 font-size: 0.875rem;
                 line-height: 1rem;
                 color: $COLOR_HOVER;
-                margin-bottom: 0.75rem;
+                text-align: center;
+                margin-bottom: 1rem;
             }
 
             hr{
                 width: 25%;
+                margin-top: auto;
             }
         }
     }
