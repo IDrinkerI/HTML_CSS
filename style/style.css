@@ -77,13 +77,9 @@
   background-color: transparent;
 }
 
-.main_header-navigator .hamburger_button_checkbox:checked ~ .main_header-navigator-wrapper {
-  right: 0;
-}
-
 .main_header-navigator .hamburger_button_label {
   position: absolute;
-  right: 0;
+  right: 10px;
   display: none;
 }
 
@@ -183,7 +179,6 @@
 }
 
 .main_header-slider {
-  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +188,14 @@
           justify-content: space-between;
   color: #fff;
   text-align: center;
+}
+
+.main_header-slider-wrapper {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .main_header-slider-pretitle {
@@ -251,17 +254,28 @@
   background-color: transparent;
   outline: none;
   border: 1px solid transparent;
-  padding-top: 2%;
+  position: absolute;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .main_header-slider-button svg {
   fill: #fff;
 }
 
-.main_header-slider-button:active {
+.main_header-slider-button:active svg {
   opacity: 0.5;
   -webkit-animation: pushing_button 0.1s linear;
           animation: pushing_button 0.1s linear;
+}
+
+.main_header-slider-button-left_button {
+  left: 10vh;
+}
+
+.main_header-slider-button-right_button {
+  right: 10vh;
 }
 
 .main_header-slider-switcher {

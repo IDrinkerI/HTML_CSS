@@ -78,15 +78,14 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 background-color: transparent; 
             }
 
-            &:checked ~ .main_header-navigator-wrapper{                
-               
-                right: 0;
-            }
+            // &:checked ~ .main_header-navigator-wrapper{ 
+            //     right: 10px;
+            // }
         }
 
         .hamburger_button_label{
             position: absolute;
-            right: 0;
+            right: 10px;
             display: none; 
 
             &-view {
@@ -185,12 +184,18 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-slider{
-        width: 85%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         color: $COLOR_SECONDARY;
         text-align: center;
+
+        &-wrapper{
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
 
         &-pretitle{
             font-family: Raleway, sans-serif;
@@ -238,23 +243,34 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
         }
 
-
         &-button{
             height: fit-content;
             background-color: transparent;
             outline: none;
             border:1px solid transparent;
-            padding-top: 2%;
+            position: absolute;
+            top: 50vh;
+            transform: translateY(-50%);
             
             svg{
                 fill: $COLOR_SECONDARY;
             }
 
-            &:active{            
-                opacity: 0.5;            
+            &:active svg{            
+                opacity: 0.5;
                 animation: $ANIMATE_PUSH_BUTTON;
             }
+
+            &-left_button{
+                left: 10vh;
+            }
+
+            &-right_button{
+                right: 10vh;
+            }
         }
+
+
 
         &-switcher{
             position: absolute;
