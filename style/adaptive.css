@@ -180,6 +180,12 @@
   .footer-content {
     display: none;
   }
+  .footer-copyright-copyright_text {
+    font-size: 1rem;
+  }
+  .footer-copyright-link_list-item-link {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -230,12 +236,6 @@
   }
   .content-mobile_devices-properties_list-item {
     padding-left: 125px;
-  }
-  .footer-copyright-copyright_text {
-    font-size: 1rem;
-  }
-  .footer-copyright-link_list-item-link {
-    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=adaptive.css.map */

@@ -279,6 +279,17 @@
     .footer-content{
         display: none;
     }
+  
+    .footer-copyright{
+
+        &-copyright_text{
+            font-size: 1rem;
+        }
+
+        &-link_list-item-link{
+            font-size: 1rem;
+        }
+    }
 }
 
 @media (max-width: 320px){
@@ -346,17 +357,6 @@
             &-properties_list-item{
                 padding-left: 125px;
             }
-        }
-    }
-
-    .footer-copyright{
-
-        &-copyright_text{
-            font-size: 1rem;
-        }
-
-        &-link_list-item-link{
-            font-size: 1rem;
         }
     }
 }
