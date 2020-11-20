@@ -9,29 +9,20 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
 
 .container{
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 80px 5px 0;
-    display: flex;
-    flex-direction: column;
 }
 
-.main_header{
-    
+.main_header{    
     background-image: url(../image/bg_header.png);
     background-repeat: no-repeat;
-    background-size: cover;    
-
-    .container{
-        width: 1600px;
-        padding: 40px 0 50px;
-    }
+    background-size: cover; 
+    height: 100vh;
+    padding-top: 40px;
 
     &-navigator{
-        width: 80%;
-        margin:0 auto;
         display: flex;
-        margin-bottom: 310px;
+        margin-bottom: 300px;
 
         &-logolink{           
 
@@ -107,7 +98,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         position: relative;
 
         &-wrapper{
-            margin-bottom: 310px;
+            margin-bottom: 260px;
         }
 
         &-pretitle{
@@ -234,7 +225,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         font-family: Roboto, sans-serif;
         font-size: 14px;
         line-height: 16px;
-        //width: fit-content;
+        width: fit-content;
         // height: fit-content;      
     }
 
@@ -251,9 +242,9 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     ////////////////
     &-partition_switcher{
         
-        .container{
-            padding-bottom: 80px;
-            flex-direction: row;
+        &-wrapper{
+            padding: 85px 0;
+            display: flex;
             justify-content: space-around;
         }
 
@@ -312,36 +303,38 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
     &-realization{
         background-color: $COLOR_SECTION_BACKGROUND;
-
-        .container{           
-            flex-direction: column;
-        }
+        padding-top: 80px;
+        margin-bottom: -3px;
 
         .content-text{
             width: 770px;
             margin: 0 auto;
             margin-bottom: 42px;
         }
+
+        &-image{
+            width: 100%;
+        }
     }
 
     &-purchase_now{
         background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+        padding: 45px 0;
 
-        .container{
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 45px 0;
-        }
+         &-wrapper{
+             display: flex;
+             justify-content: space-between;
+         }
 
         &-title{
             font-family: Raleway, sans-serif;
             font-size: 28px;
             line-height: 33px;
-            color: $COLOR_SECONDARY;
+            color: $COLOR_SECONDARY;            
+        }
 
-            &-company_name{
-                color: $COLOR_HOVER;
-            }
+        &-text_highlight{
+            color: $COLOR_HOVER;
         }
 
         &-text{
@@ -355,12 +348,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     }
 
     &-latest_projects{
-        padding-bottom: 32px;
+        padding: 80px 0 32px;
 
         .content-text{
             width: 800px;
             margin: 0 auto;
-            margin-bottom: 34px;
+            margin-bottom: 30px;
         }
 
         &-links_wrapper{
@@ -378,6 +371,9 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             font-weight: 300;
             font-size: 14px;
             color: #8C8C8C;
+        }
+        
+        &-link:not(:last-child){
             margin-right: 10px;
         }
 
@@ -388,10 +384,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
         &-link:active{
             animation: $ANIMATE_PUSH_LINKBUTTON;
-        }
-
-        &-link:last-child{
-            margin-right: 0;
         }
 
         &-cards_wrapper{
@@ -452,7 +444,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
         }
 
-        .content-button_link{
+        .content-button_link{            
             margin: 0 auto;
         }
     }
@@ -517,13 +509,14 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
     &-mobile_devices{
 
-        .container{
+        &-wrapper{
             background-image: url(../image/phone.png);
             background-position: left bottom;
             background-repeat: no-repeat;
+            padding-top: 80px;
         }
 
-        &-wrapper{
+        &-inner{
             width: 670px;
             margin-left: auto;
             padding: 110px 0 200px;
@@ -564,8 +557,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     &-counters{
         background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
 
-        .container{
-            flex-direction: row;
+        &-wrapper{
+            display: flex;
             justify-content: center;
             padding: 36px 0;
         }
@@ -575,7 +568,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             flex-direction: column;
             width: 115px;
             align-items: center;
-            margin-right: 72px;
 
             svg{
                 fill: $COLOR_HOVER;
@@ -604,16 +596,18 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
         }
 
-        &-card:last-child{
-            margin-right: 0;
+        &-card:not(:last-child){
+            margin-right: 70px;
         }
     }
 
     &-recent_posts{
         
-        .container{
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            padding-bottom: 32px;
+            padding: 40px 0 32px;
         }
 
         .content-text{
@@ -769,11 +763,11 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         background-repeat: no-repeat;
         background-size: cover;
 
-        .container{
-            flex-direction: row;
+        &-wrapper{
+            display: flex;
             align-items: center;
             justify-content: center;
-            padding: 140px 0 140px;
+            padding: 140px 0;
         }
 
         &-image{
@@ -784,6 +778,177 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
 
         &-image:last-child{
             margin-right: 0;
+        }
+    }
+}
+
+.footer{
+
+    &-content{
+        background: #191919;
+
+        &-wrapper{            
+            display: flex;
+            justify-content: space-between;
+            padding: 80px 0 100px;              
+            
+            & > div{
+                width: 20%;
+            }  
+        }
+
+        &-title{
+            font-family: Raleway, sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: $COLOR_SECONDARY;
+            margin-bottom: 24px;
+        }
+
+        &-list_item{
+            padding-bottom: 16px;
+            border-bottom: 2px solid$COLOR_CONTENT;
+            margin-bottom: 12px;
+
+            &-text{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color:$COLOR_CONTENT;
+            }
+ 
+            &-date{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 15px;
+                color: #363636;
+            }
+        }
+
+        &-list_item:last-child{
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        &-list_item:hover{
+
+            .footer-content-list_item-text{
+                color: $COLOR_HOVER;
+            }
+
+            .footer-content-list_item-date{
+                color: $COLOR_SECONDARY;
+            }
+        }
+
+        &-about_us{
+
+            &-logo{
+                fill: $COLOR_SECONDARY;
+                margin-bottom: 18px;
+            }
+            
+            &-text{
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color:$COLOR_CONTENT;
+                margin-bottom: 18px;
+            }
+
+            &-link{
+                font-family: Montserrat, sans-serif;
+                font-size: 14px;
+                line-height: 17px;
+                color: #D1D1D1;
+                text-decoration: none;
+            }
+
+            &-link::after{
+                content: "";
+                display: inline-block;
+                border: 6px solid transparent;
+                border-left: 6px solid $COLOR_SECONDARY;
+                margin-left: 6px;
+                transform: translateY(2px);
+            }
+        }
+
+        &-recent_posts{
+
+            .footer-content-list_item-date{
+                margin-bottom: 6px;
+            }
+        }
+
+        &-twitter{
+
+            .footer-content-list_item-text{
+                margin-bottom: 6px;
+            }            
+
+            &-highlight{
+                color:  #00BFF3;;
+            }
+        }
+
+        &-dribbble_widget{
+
+            &-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            &-image{
+                width: 49%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+
+    &-copyright{        
+        padding: 40px 0;
+        background: #101010;    
+        
+        &-wrapper{
+            display: flex;
+        }
+
+        &-copyright_text{
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color:$COLOR_CONTENT;
+            margin-right: 12px;
+        }
+
+        &-link_list{
+            display: flex;
+
+            &-item{
+                border-left: 2px solid #202020;
+                padding: 0 12px;
+
+                &-link{         
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color:$COLOR_CONTENT;
+                    text-decoration: none;;
+                }
+
+                &-link:hover{
+                    color: #BAA78F;
+                }
+            }
         }
     }
 }
