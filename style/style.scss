@@ -18,6 +18,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
     background-size: cover; 
     height: 100vh;
     padding-top: 2%;
+    overflow: hidden;
 
     &-navigator{
         display: flex;
@@ -52,6 +53,10 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             height: 1px; width: 1px; 
             margin: -1px; padding: 0; border: 0; 
 
+            &:checked + label > .hamburger_button_label-view > .bar {
+                background-color: $COLOR_SECONDARY;
+            }
+
             &:checked + label > .hamburger_button_label-view > .bar1{
                 top: 13.5px;
                 background-color: transparent;
@@ -77,15 +82,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 bottom: 13.5px;
                 background-color: transparent; 
             }
-
-            // &:checked ~ .main_header-navigator-wrapper{ 
-            //     right: 10px;
-            // }
         }
 
         .hamburger_button_label{
             position: absolute;
             right: 10px;
+            z-index: 2;
             display: none; 
 
             &-view {
@@ -100,7 +102,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                     background-color: $COLOR_PRIMARY;
                     display: block;
                     border-radius: 4px;
-                    transition: all 0.4s ease-in-out;
                     position: absolute; 
                     transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
                 }
@@ -344,7 +345,6 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         }
     }
 
-
     ////////////////
     // Main Sections
     ////////////////
@@ -435,6 +435,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             padding: 4% 1%;
              display: flex;
              justify-content: space-between;
+             align-items: center;
          }
 
         &-title{
@@ -729,7 +730,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
             }
 
             hr{
-                width: 25%;
+                width: 30%;
                 margin-top: auto;
             }
         }
@@ -752,7 +753,8 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-cards_wrapper{
             width: 100%;
             display: flex;
-            justify-content: space-around;            
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-bottom: 4.5%;
         }
 
@@ -766,7 +768,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                 left: 6%;
                 top: 5%;
                 text-align: center;
-                width: 14%;
+                //width: 15%;
                 $CALENDAR_BORDER_RADIUS: 0.4rem;
                 z-index: 1;
 
@@ -779,6 +781,7 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
                     background-color: rgba(0, 0, 0, 0.5);                    
                     border-top-left-radius: $CALENDAR_BORDER_RADIUS;
                     border-top-right-radius: $CALENDAR_BORDER_RADIUS;
+                    padding: 0 0.75rem;
                 }
 
                 &-month{
@@ -899,17 +902,12 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         &-wrapper{
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 12% 1%;
+            justify-content: space-between;
+            padding: 12% 2%;
         }
 
         &-image{
-            width: fit-content;
-            height: fit-content;            
-
-            &:not(:last-of-type){
-                margin-right: 6.5%;
-            }
+            width: 20%;
         }
     }
 }
@@ -975,10 +973,14 @@ $ANIMATE_PUSH_BUTTON: pushing_button 0.1s linear;
         }
 
         &-about_us{
+            position: relative;
+            padding-top: 75px;
 
             &-logo{
                 fill: $COLOR_SECONDARY;
-                margin-bottom: 1.125rem;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
             
             &-text{
